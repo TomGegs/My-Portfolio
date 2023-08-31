@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    @apply bg-bgSecondary max-w-[1920px] mx-auto font-encode;
+}
