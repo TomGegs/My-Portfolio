@@ -1,29 +1,34 @@
 // import Preloader from "./components/preloader/Preloader";
-import NavBar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
-import PageHeader from "./components/headers/PageHeader";
-import Hero from "./pages/1.hero/Hero";
-import About from "./pages/2.about/About";
-import Projects from "./pages/3.projects/Projects";
-import Contact from "./pages/4.contact/Contact";
-import Home from "./pages/home/home";
+import { HashRouter, Route, Routes } from 'react-router-dom';
+import NavBar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
+import About from './pages/2.about/About';
+import Projects from './pages/3.projects/Projects';
+import Contact from './pages/4.contact/Contact';
+import ErrorPage from './pages/error/ErrorPage';
+import Home from './pages/home/Home';
 
-function App() {
+export function App() {
     return (
         <>
             {/* <Preloader /> */}
             <NavBar />
-            <Hero />
-            <Home />
-            <PageHeader title="About" />
-            <About />
-            <PageHeader title="My Projects" />
-            <Projects />
-            <PageHeader title="Contact" />
-            <Contact />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="*" errorElement={<ErrorPage />} />
+            </Routes>
             <Footer />
         </>
     );
 }
 
-export default App;
+export function WrappedApp() {
+    return (
+        <HashRouter>
+            <App />
+        </HashRouter>
+    );
+}

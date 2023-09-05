@@ -1,4 +1,4 @@
-const AboutWrapper = ({ aboutImageBg, aboutImageFg, children }) => {
+function AboutWrapper({ aboutImageBg, aboutImageFg, children }) {
     return (
         <div className="relative flex h-full w-full flex-row lg:min-h-[650px]">
             <div className="h-fill hidden lg:relative mx-auto mr-12 lg:flex w-[40%] flex-col items-center justify-center object-center align-middle ">
@@ -16,6 +16,6 @@ const AboutWrapper = ({ aboutImageBg, aboutImageFg, children }) => {
             <div className="flex h-full w-full flex-col">{children}</div>
         </div>
     );
-};
+}
 
 export default AboutWrapper;

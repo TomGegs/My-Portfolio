@@ -1,6 +1,6 @@
-import images from "../../data/images";
+import images from '../../data/images';
 
-const PageHeader = ({ title }) => {
+function PageHeader({ title }) {
     return (
         <div className="mx-auto mb-8 mt-6 flex max-w-[1920px] px-10  lg:px-24 ">
             <div className="flex flex-row place-items-center rounded-2xl lg:border-black lg:bg-bgPrimary lg:p-4">
@@ -15,6 +15,6 @@ const PageHeader = ({ title }) => {
             </div>
         </div>
     );
-};
+}
 
 export default PageHeader;

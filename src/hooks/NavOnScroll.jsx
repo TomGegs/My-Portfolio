@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 const NavBgOnScroll = () => {
     const [navBarBackground, setNavBarBackground] = useState(false);
@@ -13,9 +13,9 @@ const NavBgOnScroll = () => {
     };
 
     useEffect(() => {
-        window.addEventListener("scroll", handleBgScroll);
+        window.addEventListener('scroll', handleBgScroll);
         return () => {
-            window.removeEventListener("scroll", handleBgScroll);
+            window.removeEventListener('scroll', handleBgScroll);
         };
     }, []);
 

@@ -1,53 +1,53 @@
-import TimelineEvents from "./TimelineEvents";
+import TimelineEvents from './TimelineEvents';
 
-const Timeline = () => {
+function Timeline() {
     const timelineStyle =
-        "group h-full w-full lg:border-l lg:border-bgPrimary delay-75 lg:before:absolute lg:before:z-10 lg:before:h-[1px] lg:before:w-[15px] lg:before:translate-y-8  lg:before:bg-white/30 lg:before:transition-all lg:before:delay-75 lg:before:ease-in lg:hover:border-l lg:before:hover:bg-altSecond";
+        'group h-full w-full lg:border-l lg:border-bgPrimary delay-75 lg:before:absolute lg:before:z-10 lg:before:h-[1px] lg:before:w-[15px] lg:before:translate-y-8  lg:before:bg-white/30 lg:before:transition-all lg:before:delay-75 lg:before:ease-in lg:hover:border-l lg:before:hover:bg-altSecond';
     const careerData = [
         {
-            sectionTitle: "Career",
-            position: "React Developer ",
-            employeer: "Freelance",
+            sectionTitle: 'Career',
+            position: 'React Developer ',
+            employeer: 'Freelance',
         },
         {
-            position: "(Acting) Director Transformation Delivery Office",
-            employeer: "Public Trustee of Queensland",
+            position: '(Acting) Director Transformation Delivery Office',
+            employeer: 'Public Trustee of Queensland',
         },
         {
-            position: "Continuous Improvement (CI) Delivery Lead ",
-            employeer: "Public Trustee of Queensland",
+            position: 'Continuous Improvement (CI) Delivery Lead ',
+            employeer: 'Public Trustee of Queensland',
         },
         {
-            position: "Digital Analyst",
-            employeer: "Public Trustee of Queensland",
+            position: 'Digital Analyst',
+            employeer: 'Public Trustee of Queensland',
         },
         {
-            position: "Business Analyst",
-            employeer: "C.P.L. - Choice, Passion, Life",
+            position: 'Business Analyst',
+            employeer: 'C.P.L. - Choice, Passion, Life',
             description:
-                "User research, process mapping, and requirements gathering",
+                'User research, process mapping, and requirements gathering',
         },
         {
-            position: "Business Growth Manager",
-            employeer: "ShareStory",
+            position: 'Business Growth Manager',
+            employeer: 'ShareStory',
         },
     ];
 
     const venturesData = [
         {
-            sectionTitle: "Ventures",
-            position: "Co-Founder",
-            employeer: "TOKN ",
+            sectionTitle: 'Ventures',
+            position: 'Co-Founder',
+            employeer: 'TOKN ',
             description:
-                "Startup to connect the community with XR and Web3 opportunities",
+                'Startup to connect the community with XR and Web3 opportunities',
         },
         {
-            position: "Co-Founder",
-            employeer: "Right Click Gaming",
+            position: 'Co-Founder',
+            employeer: 'Right Click Gaming',
         },
         {
-            position: "Event Host",
-            employeer: "RoboWars Australia",
+            position: 'Event Host',
+            employeer: 'RoboWars Australia',
         },
     ];
 
@@ -57,7 +57,7 @@ const Timeline = () => {
             <div className={timelineStyle}>
                 {careerData.map((career, i) => (
                     <TimelineEvents
-                        key={i}
+                        key={career.position}
                         sectionTitle={career.sectionTitle}
                         position={career.position}
                         employeer={career.employeer}
@@ -69,7 +69,7 @@ const Timeline = () => {
             <div className={timelineStyle}>
                 {venturesData.map((venture, i) => (
                     <TimelineEvents
-                        key={i}
+                        key={venture.key}
                         sectionTitle={venture.sectionTitle}
                         position={venture.position}
                         employeer={venture.employeer}
@@ -79,6 +79,6 @@ const Timeline = () => {
             </div>
         </div>
     );
-};
+}
 
 export default Timeline;

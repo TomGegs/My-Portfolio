@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from "react";
-import images from "../../../data/images";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef, useState } from 'react';
+import { motion, useAnimation, useInView } from 'framer-motion';
+import images from '../../../data/images';
 
-const SkillsTiles = ({ title, iconIndex, processIndex }) => {
+function SkillsTiles({ title, iconIndex, processIndex }) {
     const [isOpenAccordion, setIsOpenAccordion] = useState(
         Array.isArray(processIndex)
             ? Array(processIndex.length).fill(window.innerWidth >= 1024)
@@ -30,17 +30,17 @@ const SkillsTiles = ({ title, iconIndex, processIndex }) => {
             y: 0,
             transition: {
                 delay: 0.1 * i,
-                when: "afterChildren",
+                when: 'afterChildren',
             },
         }),
     };
 
     useEffect(() => {
         if (isInView) {
-            //trigger animation
-            mainControls.start("visible");
-            //trigger animation after main animation
-            slideControls.start("visible");
+            // trigger animation
+            mainControls.start('visible');
+            // trigger animation after main animation
+            slideControls.start('visible');
         }
     }, [isInView, mainControls, slideControls]);
 
@@ -57,7 +57,8 @@ const SkillsTiles = ({ title, iconIndex, processIndex }) => {
                 initial="hidden"
                 animate={mainControls}
                 transition={{ duration: 0.5 }}
-                className="mb-2 animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text lg:pl-10 text-left text-[2rem] font-light text-transparent group-hover:text-altSecond md:text-[2.5rem] xl:text-[3rem]">
+                className="mb-2 animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text lg:pl-10 text-left text-[2rem] font-light text-transparent group-hover:text-altSecond md:text-[2.5rem] xl:text-[3rem]"
+            >
                 {title}
             </motion.div>
 
@@ -69,7 +70,8 @@ const SkillsTiles = ({ title, iconIndex, processIndex }) => {
                             <li
                                 key={icon.label}
                                 ref={refIcons}
-                                className="mx-4 my-2 flex flex-col">
+                                className="mx-4 my-2 flex flex-col"
+                            >
                                 <motion.img
                                     src={images[icon.image]}
                                     alt={`${icon.label} icon`}
@@ -99,11 +101,12 @@ const SkillsTiles = ({ title, iconIndex, processIndex }) => {
                                 }}
                                 layout
                                 onClick={() => toggleAccordion(index)}
-                                key={index}
-                                className="w-full flex rounded-2xl flex-col border align-middle border-bgPrimary px-2 py-5 lg:py-10 group-hover:text-white">
+                                key={process.label}
+                                className="w-full flex rounded-2xl flex-col border align-middle border-bgPrimary px-2 py-5 lg:py-10 group-hover:text-white"
+                            >
                                 <div className="flex flex-row w-full items-center  relative h-full align-middle text-center">
                                     <h4 className="animate__fadeInUp  flex h-fit w-full justify-center font-thin text-center align-middle lg:font-normal lg:text-xl  text-white/75 transition-all delay-75 ease-in-out [animation-delay:1s] group-hover:text-white ">
-                                        {process.label}{" "}
+                                        {process.label}{' '}
                                     </h4>
                                     <span className="flex absolute right-2 top-[25%] lg:hidden ">
                                         {isOpenAccordion[index] ? (
@@ -123,9 +126,10 @@ const SkillsTiles = ({ title, iconIndex, processIndex }) => {
                                             // Show description on screens larger than 'lg'
                                             isOpenAccordion[index] ||
                                             !process.description
-                                                ? "block"
-                                                : "hidden"
-                                        } animate__fadeInUp flex h-fit w-full pt-2 justify-center text-center align-middle text-xs font-thin  text-white/75 transition-all delay-75 ease-in-out [animation-delay:1s] group-hover:text-white lg:text-sm`}>
+                                                ? 'block'
+                                                : 'hidden'
+                                        } animate__fadeInUp flex h-fit w-full pt-2 justify-center text-center align-middle text-xs font-thin  text-white/75 transition-all delay-75 ease-in-out [animation-delay:1s] group-hover:text-white lg:text-sm`}
+                                    >
                                         {process.description}
                                     </motion.p>
                                 )}
@@ -136,6 +140,6 @@ const SkillsTiles = ({ title, iconIndex, processIndex }) => {
             </div>
         </div>
     );
-};
+}
 
 export default SkillsTiles;

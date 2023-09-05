@@ -1,17 +1,11 @@
-import AboutWrapper from "../AboutWrapper";
-import Story from "./Story";
-import Hobbies from "./Hobbies";
-import images from "../../../data/images";
+import Story from './Story';
 
-const Personal = () => {
+function Personal() {
     return (
-        <AboutWrapper
-            aboutImageBg={images.aboutMeBg}
-            aboutImageFg={images.aboutMeFg}>
-            <Hobbies />
+        <div>
             <Story />
-        </AboutWrapper>
+        </div>
     );
-};
+}
 
 export default Personal;
