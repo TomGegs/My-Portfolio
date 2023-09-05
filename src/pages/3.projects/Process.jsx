@@ -49,10 +49,10 @@ function Process() {
                     onKeyDown={() => toggleAccordion}
                     role="button"
                     tabIndex={0}
-                    className="w-full flex flex-col border rounded-2xl border-bgSecondary px-2 py-5 lg:py-10 group-hover:text-white cursor-pointer"
+                    className="w-full flex flex-col border rounded-2xl border-bgSecondary px-2 py-5 lg:py-10 cursor-pointer"
                 >
                     <div className="flex items-center justify-center relative h-full">
-                        <h4 className="text-center font-thin lg:font-normal lg:text-xl text-white/75 transition-all delay-75 ease-in-out group-hover:text-white">
+                        <h4 className="text-center font-thin lg:font-normal lg:text-xl text-white transition-all delay-75 ease-in-out">
                             {process.label}
                         </h4>
                         <span className="absolute right-2 top-[25%]">
@@ -68,7 +68,7 @@ function Process() {
                             isOpenAccordion[index]
                                 ? 'block opacity-100'
                                 : 'hidden opacity-0'
-                        } text-center text-xs font-thin text-white/75 transition-all delay-100 duration-200 ease-in-out group-hover:text-white lg:text-sm`}
+                        } text-center text-xs font-thin text-white transition-all delay-100 duration-200 ease-in-out lg:text-sm`}
                     >
                         {process.description}
                     </p>
