@@ -15,7 +15,7 @@ function MyProjects({
     const imgSrc = images[projectImage];
     const videoSrc = videos[projectVideo];
     return (
-        <div className="flex w-full flex-col group transition-all duration-300 ease-in-out bg-gradient-to-b hover:bg-gradient-to-r hover:from-primary/20 hover:via-primary/20  hover:to-altSecond/20  from-bgPrimary to-[#d7e4e0]/10 shadow-md backdrop-blur rounded-2xl border-bgPrimary p-2 content-start">
+        <div className="group flex w-full flex-col content-start rounded-2xl border-bgPrimary bg-gradient-to-b from-bgPrimary to-[#d7e4e0]/10 p-2  shadow-md  backdrop-blur transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-primary/20 hover:via-primary/20 hover:to-altSecond/20">
             <div className="relative">
                 {projectVideo ? (
                     <video
@@ -25,7 +25,7 @@ function MyProjects({
                         autoPlay
                         playsInline
                         type="video/mp4"
-                        className="mx-auto w-full lg:max-w-[600px] shadow-md rounded-2xl group-hover:scale-100 transition-all duration-300 ease-in-out scale-95"
+                        className="mx-auto w-full scale-95 rounded-2xl shadow-md transition-all duration-300 ease-in-out group-hover:scale-100 lg:max-w-[600px]"
                         loading="lazy"
                         poster={imgSrc}
                     />
@@ -33,20 +33,20 @@ function MyProjects({
                     <img
                         src={imgSrc}
                         alt="Project mockup"
-                        className="mx-auto w-full lg:max-w-[600px] lg:scale-95 group-hover:scale-100 transition-all duration-300 ease-in-out"
+                        className="mx-auto w-full transition-all duration-300 ease-in-out group-hover:scale-100 lg:max-w-[600px] lg:scale-95"
                         loading="lazy"
                     />
                 )}
                 {!button1Url ? (
                     <span
                         alt="icon indicating the project is under construction"
-                        className="absolute right-[40%] lg:right-[47%] -skew-x-12 flex justify-center top-[20%] lg:top-[40%] w-[50px]"
+                        className="absolute right-[40%] top-[20%] flex w-[50px] -skew-x-12 justify-center lg:right-[47%] lg:top-[40%]"
                     >
-                        <images.buildIcon className="text-[100px] animate-wave text-primary" />
+                        <images.buildIcon className="animate-wave text-[100px] text-primary" />
                     </span>
                 ) : null}
             </div>
-            <div className="grid h-full px-2 lg:px-6 items-center gap-y-5  lg:grid-rows-4 lg:gap-y-2 ">
+            <div className="grid h-full items-center gap-y-5 px-2 lg:grid-rows-4  lg:gap-y-2 lg:px-6 ">
                 {/* Project title */}
                 <h3 className="animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text pt-5  text-[2rem] font-light text-transparent md:text-[2.5rem] xl:text-[3rem]">
                     {title}

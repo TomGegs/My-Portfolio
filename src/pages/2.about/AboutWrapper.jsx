@@ -1,7 +1,7 @@
 function AboutWrapper({ aboutImageBg, aboutImageFg, children }) {
     return (
         <div className="relative flex h-full w-full flex-row lg:min-h-[650px]">
-            <div className="h-fill hidden lg:relative mx-auto mr-12 lg:flex w-[40%] flex-col items-center justify-center object-center align-middle ">
+            <div className="h-fill mx-auto mr-12 hidden w-[40%] flex-col items-center justify-center object-center align-middle lg:relative lg:flex ">
                 <img
                     src={aboutImageBg}
                     alt={aboutImageBg}

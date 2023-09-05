@@ -84,7 +84,7 @@ function Career() {
     ];
 
     return (
-        <div className="relative py-4 flex h-full w-full flex-col gap-y-4 lg:gap-y-0 justify-between lg:flex-row lg:bg-gradient-to-b lg:from-bgPrimary lg:to-[#d7e4e0]/10 lg:shadow-md lg:backdrop-blur lg:rounded-2xl lg:border-bgPrimary lg:p-10">
+        <div className="relative flex h-full w-full flex-col justify-between gap-y-4 py-4 lg:flex-row lg:gap-y-0 lg:rounded-2xl lg:border-bgPrimary lg:bg-gradient-to-b lg:from-bgPrimary lg:to-[#d7e4e0]/10 lg:p-10 lg:shadow-md lg:backdrop-blur">
             {/* Career */}
             <div className="flex flex-col ">
                 {careerData.map((career) => (
@@ -98,7 +98,7 @@ function Career() {
                 ))}
             </div>
 
-            <div className="flex flex-col lg:bg-gradient-to-b from-bgPrimary to-[#d7e4e0]/0 shadow-md backdrop-blur rounded-2xl border-bgPrimary h-fit lg:pb-2 lg:px-10">
+            <div className="flex h-fit flex-col rounded-2xl border-bgPrimary from-bgPrimary to-[#d7e4e0]/0 shadow-md backdrop-blur lg:bg-gradient-to-b lg:px-10 lg:pb-2">
                 {/* Ventures */}
 
                 {businessVenturesData.map((venture) => (
@@ -111,7 +111,7 @@ function Career() {
                     />
                 ))}
             </div>
-            <div className="flex flex-col lg:bg-gradient-to-b from-bgPrimary to-[#d7e4e0]/10 shadow-md backdrop-blur rounded-2xl border-bgPrimary h-fit lg:pb-2 lg:px-10">
+            <div className="flex h-fit flex-col rounded-2xl border-bgPrimary from-bgPrimary to-[#d7e4e0]/10 shadow-md backdrop-blur lg:bg-gradient-to-b lg:px-10 lg:pb-2">
                 {/* Other Ventures */}
 
                 {otherVenturesData.map((otherVenture) => (

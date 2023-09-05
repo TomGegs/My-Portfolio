@@ -17,9 +17,9 @@ function Tech() {
     ];
 
     return (
-        <div className="w-full font-encode flex flex-col bg-gradient-to-b from-bgPrimary to-[#d7e4e0]/10 shadow-md backdrop-blur rounded-2xl border-bgPrimary text-white p-10">
+        <div className="flex w-full flex-col rounded-2xl border-bgPrimary bg-gradient-to-b from-bgPrimary to-[#d7e4e0]/10 p-10 font-encode text-white shadow-md backdrop-blur">
             {techIconIndex ? (
-                <ul className="grid grid-cols-3 gap-10 lg:gap-12 lg:grid-cols-4 lg:flex-wrap">
+                <ul className="grid grid-cols-3 gap-10 lg:grid-cols-4 lg:flex-wrap lg:gap-12">
                     {techIconIndex.map((icon) => (
                         <li key={icon.label} className="flex flex-col">
                             <img
@@ -28,7 +28,7 @@ function Tech() {
                                 key={icon.image}
                                 className="mx-auto aspect-square max-h-[30px] object-contain xl:max-h-[45px]"
                             />
-                            <p className="mt-2 text-xs lg:flex lg:text-sm h-full w-full justify-center text-center align-middle font-thin">
+                            <p className="mt-2 h-full w-full justify-center text-center align-middle text-xs font-thin lg:flex lg:text-sm">
                                 {icon.label}
                             </p>
                         </li>

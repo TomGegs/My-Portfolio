@@ -4,14 +4,14 @@ import EmailIconButton from './EmailIconButton';
 function SocialButtons({ pulse }) {
     return (
         // Container
-        <div className="relative mx-auto flex flex-row gap-6  lg:gap-8 xl:gap-10 2xl-gap-16 text-[#FFFDFA]">
+        <div className="2xl-gap-16 relative mx-auto flex flex-row  gap-6 text-[#FFFDFA] lg:gap-8 xl:gap-10">
             {/* Icons */}
             <a
                 href="https://www.linkedin.com/in/thomas-geoghegan/"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <images.linkedinIcon className="duration-150 ease-in-out text-[30px] lg:text-[40px] hover:cursor-pointer hover:text-altSecond " />
+                <images.linkedinIcon className="text-[30px] duration-150 ease-in-out hover:cursor-pointer hover:text-altSecond lg:text-[40px] " />
             </a>
 
             <a
@@ -19,7 +19,7 @@ function SocialButtons({ pulse }) {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <images.gitHubIcon className="duration-150 text-[30px] lg:text-[40px] ease-in-out hover:cursor-pointer hover:text-altSecond" />
+                <images.gitHubIcon className="text-[30px] duration-150 ease-in-out hover:cursor-pointer hover:text-altSecond lg:text-[40px]" />
             </a>
             {/* Email icon - auto-generate and open email */}
             <EmailIconButton pulse={pulse} />

@@ -41,7 +41,7 @@ function Process() {
     };
 
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-3 lg:p-10 bg-gradient-to-b from-bgPrimary to-[#d7e4e0]/10 shadow-md backdrop-blur rounded-2xl border-bgPrimary text-white">
+        <div className="grid grid-cols-1 gap-4 rounded-2xl border-bgPrimary bg-gradient-to-b from-bgPrimary to-[#d7e4e0]/10 p-3 text-white shadow-md backdrop-blur lg:grid-cols-3 lg:p-10">
             {processArray.map((process, index) => (
                 <div
                     key={process.label}
@@ -49,10 +49,10 @@ function Process() {
                     onKeyDown={() => toggleAccordion}
                     role="button"
                     tabIndex={0}
-                    className="w-full flex flex-col border rounded-2xl border-bgSecondary px-2 py-5 lg:py-10 cursor-pointer"
+                    className="flex w-full cursor-pointer flex-col rounded-2xl border border-bgSecondary px-2 py-5 lg:py-10"
                 >
-                    <div className="flex items-center justify-center relative h-full">
-                        <h4 className="text-center font-thin lg:font-normal lg:text-xl text-white transition-all delay-75 ease-in-out">
+                    <div className="relative flex h-full items-center justify-center">
+                        <h4 className="text-center font-thin text-white transition-all delay-75 ease-in-out lg:text-xl lg:font-normal">
                             {process.label}
                         </h4>
                         <span className="absolute right-2 top-[25%]">

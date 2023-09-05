@@ -1,14 +1,14 @@
 function Story() {
     return (
-        <div className="group relative h-full font-Nohemi text-white/30 flex w-full flex-col group py-4 lg:py-12">
+        <div className="group group relative flex h-full w-full flex-col py-4 font-Nohemi text-white/30 lg:py-12">
             {/* Section Title */}
             <h2 className="animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text py-2  text-[2rem] font-light text-transparent md:text-[2.5rem] xl:text-[3rem]">
                 Hello there{' '}
-                <span className="text-white inline-flex animate-wave ">👋</span>{' '}
+                <span className="inline-flex animate-wave text-white ">👋</span>{' '}
                 I&apos;m Tom
             </h2>
             {/* About me content */}{' '}
-            <div className="w-full text-white/75 transition-all duration-300 ease-in-out lg:text-3xl  group-hover:text-white ">
+            <div className="w-full text-white/75 transition-all duration-300 ease-in-out group-hover:text-white  lg:text-3xl ">
                 Developer, designer, avid technophile, and business startup
                 enthusiast.
                 <br />
@@ -25,7 +25,7 @@ function Story() {
                 I&apos;m a coffee enthusiast on a java journey, from perfecting
                 the pour-over to uncovering the best bang-for-buck bean. No
                 snobbery, just keenness for the{' '}
-                <span className="animate-bounce inline-block">
+                <span className="inline-block animate-bounce">
                     &apos;caff&apos;
                 </span>
                 .)

@@ -10,7 +10,7 @@
 }
 
 :root {
-    @apply bg-bgSecondary max-w-[1920px] mx-auto font-Nohemi;
+    @apply mx-auto max-w-[1920px] bg-bgSecondary font-Nohemi;
 }
 
 * {

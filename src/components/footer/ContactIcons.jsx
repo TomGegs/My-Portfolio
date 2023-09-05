@@ -26,7 +26,7 @@ function ContactIcons() {
     // duration-150 text-[30px] lg:text-[40px] ease-in-out hover:cursor-pointer hover:text-altSecond"
 
     return (
-        <div className="h-[70px] w-full flex items-end flex-row justify-between break-words text-center text-sm ">
+        <div className="flex h-[70px] w-full flex-row items-end justify-between break-words text-center text-sm ">
             {contactData.map((contact) => {
                 const IconComponent = images[contact.icon];
                 return (
@@ -41,15 +41,15 @@ function ContactIcons() {
                                 rel="noopener noreferrer"
                                 className="flex flex-col items-center justify-center"
                             >
-                                <IconComponent className="duration-150 ease-in-out hover:cursor-pointer h-full text-[30px] lg:h-[40px] hover:text-altSecond" />
-                                <p className="hidden text-[0.6rem] mt-2 h-full items-end min-[300px]:text-[0.48rem] min-[321px]:text-[0.6rem] lg:flex lg:text-sm">
+                                <IconComponent className="h-full text-[30px] duration-150 ease-in-out hover:cursor-pointer hover:text-altSecond lg:h-[40px]" />
+                                <p className="mt-2 hidden h-full items-end text-[0.6rem] min-[300px]:text-[0.48rem] min-[321px]:text-[0.6rem] lg:flex lg:text-sm">
                                     {contact.text}
                                 </p>
                             </a>
                         ) : (
                             <>
                                 {contact.icon}
-                                <p className="hidden text-[0.6rem] mt-2 h-full items-end min-[300px]:text-[0.48rem] min-[321px]:text-[0.6rem] lg:flex lg:text-sm">
+                                <p className="mt-2 hidden h-full items-end text-[0.6rem] min-[300px]:text-[0.48rem] min-[321px]:text-[0.6rem] lg:flex lg:text-sm">
                                     {contact.text}
                                 </p>
                             </>

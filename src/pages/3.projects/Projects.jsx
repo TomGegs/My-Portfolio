@@ -9,14 +9,14 @@ function Projects() {
     return (
         <section
             id="projects"
-            className="mx-auto mt-20 lg:mt-28 w-full justify-center flex flex-col px-10 text-white mb-6 lg:mb-12 lg:px-24 lg:pt-0 "
+            className="mx-auto mb-6 mt-20 flex w-full flex-col justify-center px-10 text-white lg:mb-12 lg:mt-28 lg:px-24 lg:pt-0 "
         >
             {/* Title */}
-            <h1 className="block animate-gradient bg-gradient-to-r overflow-visible from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] md:text-[1rem] lg:text-[2rem] xl:text-[3rem] font-semibold leading-tight text-transparent 2xl:text-[3.5rem] min-[1920px]:text-[5rem]">
+            <h1 className="block animate-gradient overflow-visible bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] font-semibold leading-tight text-transparent md:text-[1rem] lg:text-[2rem] xl:text-[3rem] 2xl:text-[3.5rem] min-[1920px]:text-[5rem]">
                 My Projects
             </h1>
 
-            <h2 className="animate-gradient bg-gradient-to-r mb-[1.5rem] from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] font-light text-transparent md:text-[2.5rem] xl:text-[3rem]">
+            <h2 className="mb-[1.5rem] animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] font-light text-transparent md:text-[2.5rem] xl:text-[3rem]">
                 Tech I use
             </h2>
             <Tech />
@@ -37,7 +37,7 @@ function Projects() {
                     />
                 ))}
             </div>
-            <h2 className="animate-gradient bg-gradient-to-r mb-[1.5rem] from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] font-light text-transparent md:text-[2.5rem] xl:text-[3rem]">
+            <h2 className="mb-[1.5rem] animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] font-light text-transparent md:text-[2.5rem] xl:text-[3rem]">
                 My Process
             </h2>
             <Process />

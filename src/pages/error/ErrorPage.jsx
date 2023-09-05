@@ -4,7 +4,7 @@ function ErrorPage() {
     const error = useRouteError();
     console.error(error);
     return (
-        <div className="w-full h-[60dvh] ">
+        <div className="h-[60dvh] w-full ">
             <h1>Oops!</h1>
             <p>Sorry, an unexpected error has occurred.</p>
             <p>

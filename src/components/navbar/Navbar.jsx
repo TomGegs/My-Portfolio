@@ -165,7 +165,7 @@ function NavBar() {
                         </ul>
                         {/* Bottom - Contact button */}
                         <div className="relative flex w-full place-content-center ">
-                            <div className="left-4.5 absolute -top-1 h-16 w-[90%] animate-gradientFast bg-gradient-to-r from-primary via-altSecond to-secondary blur-md" />
+                            <div className="left-4.5 animate-gradientFast absolute -top-1 h-16 w-[90%] bg-gradient-to-r from-primary via-altSecond to-secondary blur-md" />
                             <Link
                                 to="contact"
                                 onClick={toggleMenu}

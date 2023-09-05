@@ -45,7 +45,7 @@ function SkillsTiles({ title, iconIndex, processIndex }) {
     }, [isInView, mainControls, slideControls]);
 
     return (
-        <div className="group flex h-full w-full flex-col overflow-clip lg:border-l relative lg:border-bgPrimary pb-3 text-white/30 lg:hover:border-l">
+        <div className="group relative flex h-full w-full flex-col overflow-clip pb-3 text-white/30 lg:border-l lg:border-bgPrimary lg:hover:border-l">
             {/* Section Title */}
             <span className="lg:before:absolute lg:before:left-0 lg:before:top-0 lg:before:z-10 lg:before:h-[1px] lg:before:w-[15px]  lg:before:translate-y-8 lg:before:rounded-[25%] lg:before:bg-white/30 lg:before:transition-all lg:before:delay-75 lg:before:ease-in lg:before:group-hover:bg-altSecond lg:before:group-hover:transition-all lg:before:group-hover:delay-75 lg:before:group-hover:ease-in " />
             <motion.div
@@ -57,7 +57,7 @@ function SkillsTiles({ title, iconIndex, processIndex }) {
                 initial="hidden"
                 animate={mainControls}
                 transition={{ duration: 0.5 }}
-                className="mb-2 animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text lg:pl-10 text-left text-[2rem] font-light text-transparent group-hover:text-altSecond md:text-[2.5rem] xl:text-[3rem]"
+                className="mb-2 animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text text-left text-[2rem] font-light text-transparent group-hover:text-altSecond md:text-[2.5rem] lg:pl-10 xl:text-[3rem]"
             >
                 {title}
             </motion.div>
@@ -93,7 +93,7 @@ function SkillsTiles({ title, iconIndex, processIndex }) {
                 ) : null}
 
                 {processIndex ? (
-                    <div className="grid w-full grid-cols-1 lg:grid-cols-3 justify-items-center gap-3 lg:gap-4 lg:px-10">
+                    <div className="grid w-full grid-cols-1 justify-items-center gap-3 lg:grid-cols-3 lg:gap-4 lg:px-10">
                         {processIndex.map((process, index) => (
                             <motion.div
                                 transition={{
@@ -102,13 +102,13 @@ function SkillsTiles({ title, iconIndex, processIndex }) {
                                 layout
                                 onClick={() => toggleAccordion(index)}
                                 key={process.label}
-                                className="w-full flex rounded-2xl flex-col border align-middle border-bgPrimary px-2 py-5 lg:py-10 group-hover:text-white"
+                                className="flex w-full flex-col rounded-2xl border border-bgPrimary px-2 py-5 align-middle group-hover:text-white lg:py-10"
                             >
-                                <div className="flex flex-row w-full items-center  relative h-full align-middle text-center">
-                                    <h4 className="animate__fadeInUp  flex h-fit w-full justify-center font-thin text-center align-middle lg:font-normal lg:text-xl  text-white/75 transition-all delay-75 ease-in-out [animation-delay:1s] group-hover:text-white ">
+                                <div className="relative flex h-full w-full  flex-row items-center text-center align-middle">
+                                    <h4 className="animate__fadeInUp  flex h-fit w-full justify-center text-center align-middle font-thin text-white/75 transition-all  delay-75 ease-in-out [animation-delay:1s] group-hover:text-white lg:text-xl lg:font-normal ">
                                         {process.label}{' '}
                                     </h4>
-                                    <span className="flex absolute right-2 top-[25%] lg:hidden ">
+                                    <span className="absolute right-2 top-[25%] flex lg:hidden ">
                                         {isOpenAccordion[index] ? (
                                             <images.upArrowIcon className="text-altSecond" />
                                         ) : (
@@ -128,7 +128,7 @@ function SkillsTiles({ title, iconIndex, processIndex }) {
                                             !process.description
                                                 ? 'block'
                                                 : 'hidden'
-                                        } animate__fadeInUp flex h-fit w-full pt-2 justify-center text-center align-middle text-xs font-thin  text-white/75 transition-all delay-75 ease-in-out [animation-delay:1s] group-hover:text-white lg:text-sm`}
+                                        } animate__fadeInUp flex h-fit w-full justify-center pt-2 text-center align-middle text-xs font-thin  text-white/75 transition-all delay-75 ease-in-out [animation-delay:1s] group-hover:text-white lg:text-sm`}
                                     >
                                         {process.description}
                                     </motion.p>

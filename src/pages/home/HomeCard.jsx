@@ -26,7 +26,7 @@ function HomeCard({
         <Link key={key} to={link}>
             {/* Wrapper */}
             <div
-                className="border rounded-2xl lg:row-span-1 border-bgPrimary flex flex-col w-full h-[30vh] cursor-pointer lg:h-full relative"
+                className="relative flex h-[30vh] w-full cursor-pointer flex-col rounded-2xl border border-bgPrimary lg:row-span-1 lg:h-full"
                 onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(null)}
             >
@@ -37,9 +37,9 @@ function HomeCard({
                             src={imageBg}
                             alt=""
                             loading="lazy"
-                            className={`object-cover duration-500 absolute bg-no-repeat w-full flex h-full rounded-2xl top-0 left-0 z-[-1] ${
+                            className={`absolute left-0 top-0 z-[-1] flex h-full w-full rounded-2xl bg-no-repeat object-cover duration-500 ${
                                 hover
-                                    ? 'lg:group-hover:brightness-110 lg:group-hover:animate-pulse'
+                                    ? 'lg:group-hover:animate-pulse lg:group-hover:brightness-110'
                                     : 'lg:brightness-[0.3]'
                             }`}
                         />
@@ -47,10 +47,10 @@ function HomeCard({
                             src={imageFg}
                             alt=""
                             loading="lazy"
-                            className={`object-contain absolute bg-no-repeat w-full flex transition-all h-full self-end object-bottom rounded-[25%] bottom-0 left-0 z-[-1] ${
+                            className={`absolute bottom-0 left-0 z-[-1] flex h-full w-full self-end rounded-[25%] bg-no-repeat object-contain object-bottom transition-all ${
                                 hover
-                                    ? 'lg:group-hover:brightness-100 lg:group-hover:blur-none lg:group-hover:scale-100 ease-in-out delay-75 duration-150'
-                                    : 'lg:blur-[2px] lg:brightness-60 scale-95'
+                                    ? 'delay-75 duration-150 ease-in-out lg:group-hover:scale-100 lg:group-hover:blur-none lg:group-hover:brightness-100'
+                                    : 'lg:brightness-60 scale-95 lg:blur-[2px]'
                             }`}
                         />
                     </>
@@ -61,9 +61,9 @@ function HomeCard({
                             src={imageBg}
                             alt=""
                             loading="lazy"
-                            className={`object-cover duration-500 absolute bg-no-repeat w-full flex h-full rounded-2xl top-0 left-0 z-[-1] ${
+                            className={`absolute left-0 top-0 z-[-1] flex h-full w-full rounded-2xl bg-no-repeat object-cover duration-500 ${
                                 hover
-                                    ? 'lg:group-hover:brightness-110 lg:group-hover:animate-pulse'
+                                    ? 'lg:group-hover:animate-pulse lg:group-hover:brightness-110'
                                     : 'lg:brightness-[0.3]'
                             }`}
                         />
@@ -71,22 +71,22 @@ function HomeCard({
                             src={projectImages[projectIndex]}
                             alt=""
                             loading="lazy"
-                            className={`object-contain absolute bg-no-repeat w-full flex transition-all ease-in-out duration-100 h-full object-center bottom-0 left-0 z-[-1] ${
+                            className={`absolute bottom-0 left-0 z-[-1] flex h-full w-full bg-no-repeat object-contain object-center transition-all duration-100 ease-in-out ${
                                 hover
-                                    ? 'lg:group-hover:brightness-100 lg:group-hover:blur-none lg:group-hover:scale-100 ease-in-out delay-75 duration-150'
-                                    : 'lg:blur-[2px] lg:brightness-60 scale-95'
+                                    ? 'delay-75 duration-150 ease-in-out lg:group-hover:scale-100 lg:group-hover:blur-none lg:group-hover:brightness-100'
+                                    : 'lg:brightness-60 scale-95 lg:blur-[2px]'
                             }`}
                         />
                     </>
                 )}
                 {/* Card title and description wrapper */}
-                <div className="ease-in-out font-Nohemi bottom-0 left-0 absolute w-full bg-bgPrimary/60 transition-all h-[25%] justify-center flex flex-col gap-y-1 duration-500 p-2 lg:py-12 rounded-b-2xl">
+                <div className="absolute bottom-0 left-0 flex h-[25%] w-full flex-col justify-center gap-y-1 rounded-b-2xl bg-bgPrimary/60 p-2 font-Nohemi transition-all duration-500 ease-in-out lg:py-12">
                     {/* Card title */}
                     <h2
-                        className={`text-xl lg:text-4xl xl:text-6xl text-center w-full transition-all ${
+                        className={`w-full text-center text-xl transition-all lg:text-4xl xl:text-6xl ${
                             hover
-                                ? 'lg:font-black font-black'
-                                : 'lg:font-thin font-black lg:text-inherit'
+                                ? 'font-black lg:font-black'
+                                : 'font-black lg:font-thin lg:text-inherit'
                         }`}
                     >
                         {title}
@@ -94,16 +94,16 @@ function HomeCard({
 
                     {/* Card divider */}
                     <div
-                        className={`animate-gradient duration-200 transition-all rounded border-0 bg-gradient-to-r from-primary via-secondary h-[2px] to-[#cbb7f7] ${
+                        className={`h-[2px] animate-gradient rounded border-0 bg-gradient-to-r from-primary via-secondary to-[#cbb7f7] transition-all duration-200 ${
                             hover
                                 ? 'lg:group-hover:w-full lg:group-hover:opacity-100'
-                                : 'lg:opacity-0 lg:w-[1px]'
+                                : 'lg:w-[1px] lg:opacity-0'
                         }`}
                     />
 
                     {/* Card description */}
                     <p
-                        className={`text-sm ease-in-out duration-300 transition-all w-full lg:text-base text-center font-light ${
+                        className={`w-full text-center text-sm font-light transition-all duration-300 ease-in-out lg:text-base ${
                             hover
                                 ? 'lg:group-hover:opacity-100'
                                 : 'lg:opacity-0'

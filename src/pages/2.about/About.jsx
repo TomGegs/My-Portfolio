@@ -7,15 +7,15 @@ function About() {
     return (
         // Section Container
         <section
-            className="mx-auto mt-20 lg:mt-28 w-full justify-center font-Nohemi flex flex-col px-10 text-white mb-6 lg:mb-12 lg:px-24 lg:pt-0 "
+            className="mx-auto mb-6 mt-20 flex w-full flex-col justify-center px-10 font-Nohemi text-white lg:mb-12 lg:mt-28 lg:px-24 lg:pt-0 "
             id="about"
         >
             {/* Title */}
-            <h1 className="block animate-gradient bg-gradient-to-r overflow-visible from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] md:text-[1rem] lg:text-[2rem] xl:text-[3rem] font-semibold leading-tight text-transparent 2xl:text-[3.5rem] min-[1920px]:text-[5rem]">
+            <h1 className="block animate-gradient overflow-visible bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] font-semibold leading-tight text-transparent md:text-[1rem] lg:text-[2rem] xl:text-[3rem] 2xl:text-[3.5rem] min-[1920px]:text-[5rem]">
                 About Me
             </h1>
 
-            <div className="group relative h-full py-3 text-white/30 flex flex-col lg:grid w-full lg:grid-cols-3 justify-items-center gap-4 ">
+            <div className="group relative flex h-full w-full flex-col justify-items-center gap-4 py-3 text-white/30 lg:grid lg:grid-cols-3 ">
                 <HobbiesImage
                     image={images.aboutHobbies1}
                     description="Sun & Surf"
