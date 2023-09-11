@@ -29,7 +29,10 @@ export default [
         description:
             "Digital business card application that 3D tracks the user's mouse or touch.",
         techUsed: 'React, JavaScript, CSS, TailwindCSS',
-        projectImage: 'underConstruction',
+        projectImage: 'BusinessCardProject',
+        projectVideo: 'BusinessCardVideo',
+        button1Url: 'https://tomgcontact.netlify.app/',
+        button2Url: 'https://github.com/TomGegs/businessCard',
     },
     {
         key: 'e-Commerce Website',
