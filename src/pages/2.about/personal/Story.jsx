@@ -9,7 +9,7 @@ function Story() {
             </h2>
             {/* About me content */}{' '}
             <div className="w-full text-white/75 transition-all duration-300 ease-in-out group-hover:text-white  lg:text-3xl ">
-                Developer, designer, avid technophile, and business startup
+                Developer, designer, avid technophile, and business start-up
                 enthusiast.
                 <br />
                 With an origin story in product management, I create seamless

@@ -5,7 +5,7 @@ function Career() {
         {
             sectionTitle: 'Career (so far!)',
             position: 'React Developer ',
-            employer: 'Freelance',
+            employer: 'Student/Freelance',
             id: 'react-developer',
         },
         {
