@@ -25,12 +25,12 @@ function Hero() {
             <div className="mx-auto flex w-full flex-col justify-center pt-12 text-center ">
                 {/* Title and sub-title */}
                 <h1 className="block animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text font-encode text-[2.5rem] font-semibold leading-tight text-transparent lg:text-[3.5rem] 2xl:text-[5.5rem]">
-                    Frontend React Developer <br />
+                    Front end React Developer <br />
                 </h1>
                 <p className="mt-3 font-encode font-thin leading-normal text-[#FFFDFA] lg:mt-8 xl:text-[1.5rem]">
                     Hi, I&apos;m Tom
                     <span className="inline-flex animate-wave">👋</span>
-                    <br /> A Frontend developer, life-long learner and start-up
+                    <br /> A Front end developer, life-long learner and start-up
                     enthusiast. <br className="hidden lg:block" /> Let grab a
                     coffee and have a chat!
                 </p>

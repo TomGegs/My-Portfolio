@@ -6,13 +6,13 @@ function HeroCard() {
         <div className="mx-auto flex h-full w-full flex-col justify-center rounded-2xl border-bgPrimary bg-gradient-to-b from-bgPrimary to-[#d7e4e0]/10 px-10 py-6 shadow-md backdrop-blur lg:col-span-2 lg:row-span-2 ">
             {/* Title */}
             <h1 className="block animate-gradient overflow-visible bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] font-semibold leading-tight text-transparent md:text-[1rem] lg:text-[2rem] xl:text-[3rem] 2xl:text-[3.5rem] min-[1920px]:text-[5rem]">
-                Frontend React Developer <br />
+                Front end React Developer <br />
             </h1>
             {/* Introduction blurb */}
             <p className="mt-3 font-Nohemi font-thin leading-normal text-[#FFFDFA] lg:mt-8 xl:text-[1.5rem]">
                 Hi, I&apos;m Tom
                 <span className="inline-flex animate-wave">👋</span>
-                <br /> A Frontend developer, lifelong learner and startup
+                <br /> A Front end developer, lifelong learner and start-up
                 enthusiast. <br className="hidden lg:block" /> Let grab a coffee
                 and have a chat!
             </p>

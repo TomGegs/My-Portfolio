@@ -43,7 +43,7 @@ function Career() {
             position: 'Co-Founder',
             employer: 'TOKN ',
             description:
-                'Startup to connect the community with XR and Web3 opportunities',
+                'Start-up to connect the community with XR and Web3 opportunities',
             id: 'co-founder-tokn',
         },
         {
@@ -68,7 +68,7 @@ function Career() {
             position: 'English Teacher - Volunteer',
             employer: 'Hanoi, Vietnam - Language Link ',
             description:
-                'Startup to connect the community with XR and Web3 opportunities',
+                'Start-up to connect the community with XR and Web3 opportunities',
             id: 'english-teacher-volunteer',
         },
         {
