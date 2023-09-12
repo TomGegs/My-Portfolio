@@ -39,7 +39,7 @@ function Career() {
 
     const businessVenturesData = [
         {
-            sectionTitle: 'Business ventures',
+            sectionTitle: 'Ventures',
             position: 'Co-Founder',
             employer: 'TOKN ',
             description:
@@ -64,7 +64,7 @@ function Career() {
     ];
     const otherVenturesData = [
         {
-            sectionTitle: 'Other ventures',
+            sectionTitle: 'Other',
             position: 'English Teacher - Volunteer',
             employer: 'Hanoi, Vietnam - Language Link ',
             description:
