@@ -77,8 +77,8 @@ function NavBar() {
 
                     <ButtonDownloadHandler
                         label="Resumé"
-                        fileName="TomGeoghegan_Resume.pdf"
-                        filePath="./files/TomGeoghegan_Resume.pdf"
+                        fileName="Tom_Geoghegan_Resume_Front_End_Developer.pdf"
+                        filePath="./files/Tom_Geoghegan_Resume_Front_End_Developer.pdf"
                         styling="flex items-center rounded-lg bg-primary px-3 py-2  font-medium  text-[#FFFDFA] hover:bg-altSecond"
                     />
                 </ul>
@@ -158,8 +158,8 @@ function NavBar() {
 
                             <ButtonDownloadHandler
                                 label="Resumé"
-                                fileName="TomGeoghegan_Resume.pdf"
-                                filePath="./files/TomGeoghegan_Resume.pdf"
+                                fileName="Tom_Geoghegan_Resume_Front_End_Developer.pdf"
+                                filePath="./files/Tom_Geoghegan_Resume_Front_End_Developer.pdf"
                                 styling="cursor-pointer rounded-xl border border-bgPrimary text-left from-altSecond to-primary p-4 hover:border-primary hover:text-primary active:border-bgPrimary active:bg-gradient-to-r active:text-[#FFFDFA]"
                             />
                         </ul>

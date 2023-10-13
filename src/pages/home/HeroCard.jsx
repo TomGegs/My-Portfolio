@@ -23,8 +23,8 @@ function HeroCard() {
                 {/* Download resume button */}
                 <ButtonDownloadHandler
                     label="Download Resumé"
-                    fileName="TomGeoghegan_Resume.pdf"
-                    filePath="./files/TomGeoghegan_Resume.pdf"
+                    fileName="Tom_Geoghegan_Resume_Front_End_Developer.pdf"
+                    filePath="./files/Tom_Geoghegan_Resume_Front_End_Developer.pdf"
                     styling="delay-50 relative my-2 flex w-[100%] transform cursor-pointer justify-center font-Nohemi rounded-lg bg-bgPrimary px-[16px] py-3 text-center text-[0.8rem]  xl:text-lg font-light text-white transition-all hover:border-altSecond hover:bg-altSecond hover:text-white focus:outline-none active:translate-y-0.5 active:scale-[98%] lg:px-8 lg:py-4 "
                 />
             </div>

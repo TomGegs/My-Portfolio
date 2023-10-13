@@ -38,8 +38,8 @@ function Hero() {
                     <div className="absolute bottom-0 left-0 h-14 w-[100%] animate-gradient bg-gradient-to-r from-primary via-altSecond to-secondary blur-md lg:h-20" />
                     <ButtonDownloadHandler
                         label="Download Resumé"
-                        fileName="TomGeoghegan_Resume.pdf"
-                        filePath="./files/TomGeoghegan_Resume.pdf"
+                        fileName="Tom_Geoghegan_Resume_Front_End_Developer.pdf"
+                        filePath="./files/Tom_Geoghegan_Resume_Front_End_Developer.pdf"
                         styling="delay-50 relative my-2 flex w-[100%] transform cursor-pointer justify-center rounded-lg bg-bgPrimary px-[16px] py-3 text-center font-encode text-[0.8rem] font-light text-white transition-all hover:border-altSecond hover:bg-altSecond hover:text-white focus:outline-none active:translate-y-0.5 active:scale-[98%] lg:px-8 lg:py-4 lg:text-lg"
                     />
 
