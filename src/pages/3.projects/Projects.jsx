@@ -23,7 +23,7 @@ function Projects() {
 
             {/* All Project container */}
             <div className=" my-[1.5rem] flex h-full w-full flex-col gap-6 md:grid md:grid-cols-2">
-                {/* Project 1 */}
+                {/* Projects */}
                 {portfolioItems.map((project) => (
                     <MyProjects
                         key={project.key}

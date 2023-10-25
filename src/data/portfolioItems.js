@@ -6,7 +6,7 @@ export default [
         title: 'Copi.Rite',
         description:
             "The interface guides users through simple steps to generate marketing copy for their product or service. Utilises OpenAI's API to generate digital marketing copy based on user's inputs. ",
-        techUsed: 'Next.js, TypeScript, TailwindCSS',
+        techUsed: ['Next.js', 'TypeScript', 'TailwindCSS'],
         projectImage: 'CopiRite',
         projectVideo: 'CopiRiteVideo',
         button1Url: 'https://copi-rite.netlify.app/',
@@ -17,7 +17,7 @@ export default [
         title: 'Copi.Lite',
         description:
             "First iteration of Copi.Rite. Targeted the minimum viable function of the application's purpose of simplifying the process of generating digital marketing copy with AI.",
-        techUsed: 'Next.js, TypeScript, TailwindCSS',
+        techUsed: ['Next.js', 'TypeScript', 'TailwindCSS'],
         projectImage: 'CopiRiteV1',
         projectVideo: 'CopiLiteVideo',
         button1Url: 'https://goodcopyright.netlify.app/',
@@ -28,7 +28,7 @@ export default [
         title: 'Digital Business Card',
         description:
             "Digital business card application that 3D tracks the user's mouse or touch.",
-        techUsed: 'React, JavaScript, CSS, TailwindCSS',
+        techUsed: ['React', 'JavaScript', 'CSS', 'TailwindCSS'],
         projectImage: 'BusinessCardProject',
         projectVideo: 'BusinessCardVideo',
         button1Url: 'https://tomgcontact.netlify.app/',
@@ -39,7 +39,14 @@ export default [
         title: 'e-Commerce Website',
         description:
             'e-Commerce website using Strapi CMS and Stripe payment API. Users can browse products, add to cart and checkout. Admins can add, edit and delete products and categories. ',
-        techUsed: 'React, Javascript, Node, Strapi, Stripe, TailwindCSS',
+        techUsed: [
+            'React',
+            'Javascript',
+            'Node',
+            'Strapi',
+            'Stripe',
+            'TailwindCSS',
+        ],
         projectImage: 'underConstruction',
     },
     // {
@@ -47,7 +54,7 @@ export default [
     //     title: "OpenAI's Dall-E Clone",
     //     description:
     //         "Text to image generator clone of the DALL-E AI. Utilises OpenAI's API to generate images based on user's inputs",
-    //     techUsed: 'React, Redux, Node, MongoDB, Javascript',
+    // techUsed: ['React', 'Redux', 'Node', 'MongoDB', 'Javascript'],
     //     projectImage: 'ProjectDALLEClone',
     //     button1Url: 'https://gegs-e-x-dall-e.netlify.app/',
     //     button2Url:

@@ -1,5 +1,6 @@
 import ButtonAlt from '../../components/buttons/ButtonAlt';
 import ButtonMain from '../../components/buttons/ButtonMain';
+import Chips from '../../components/chips/Chips';
 import images from '../../data/images';
 import videos from '../../data/videos';
 
@@ -54,9 +55,11 @@ function MyProjects({
                 {/* Project description */}
                 <p className=" md:max-w-[90%] md:text-lg">{description}</p>
                 {/* technology used to build project */}
-                <p>
-                    <span className="font-bold">Build with:</span> {techUsed}
-                </p>
+                <div className="flex flex-row flex-wrap">
+                    {techUsed.map((tech, index) => (
+                        <Chips key={tech.id || index} label={tech} />
+                    ))}
+                </div>
                 {/* button 1 and button 2 url links */}
                 <div className=" flex flex-row ">
                     <ButtonMain
@@ -66,13 +69,13 @@ function MyProjects({
 
                     {button2Url ? (
                         <ButtonAlt
-                            label="Github Code"
+                            label="GitHub Code"
                             url={button2Url}
                             newTab
                         />
                     ) : (
                         <ButtonAlt
-                            label="My Github"
+                            label="My GitHub"
                             url="https://github.com/TomGegs"
                             newTab
                         />

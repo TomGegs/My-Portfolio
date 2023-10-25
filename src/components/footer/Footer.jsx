@@ -36,7 +36,7 @@ function Footer() {
                     rel="noopener noreferrer"
                     className="pt-4 text-center text-xs text-gray-600 transition-all ease-in-out hover:text-altSecond"
                 >
-                    Github
+                    GitHub
                 </a>
                 <a
                     href="https://www.linkedin.com/in/thomas-geoghegan/"

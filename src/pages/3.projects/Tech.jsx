@@ -7,7 +7,7 @@ function Tech() {
         { image: 'sass', label: 'SASS' },
         { image: 'tailwindCSS', label: 'TailwindCSS' },
         { image: 'js', label: 'JavaScript' },
-        { image: 'typescript', label: 'Typescript' },
+        { image: 'typescript', label: 'TypeScript' },
         { image: 'react', label: 'React' },
         { image: 'nextjs', label: 'Next.js' },
         { image: 'vite', label: 'Vite' },
