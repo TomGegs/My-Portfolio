@@ -17,13 +17,16 @@ function Projects() {
             </h1>
 
             <h2 className="mb-[1.5rem] animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] font-light text-transparent md:text-[2.5rem] xl:text-[3rem]">
-                Tech I use
+                The Tech
             </h2>
             <Tech />
-
+            <h2 className="mt-[1.5rem] animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] font-light text-transparent md:text-[2.5rem] xl:text-[3rem]">
+                The Showcase
+            </h2>
             {/* All Project container */}
             <div className=" my-[1.5rem] flex h-full w-full flex-col gap-6 md:grid md:grid-cols-2">
                 {/* Projects */}
+
                 {portfolioItems.map((project) => (
                     <MyProjects
                         key={project.key}
@@ -38,7 +41,7 @@ function Projects() {
                 ))}
             </div>
             <h2 className="mb-[1.5rem] animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] font-light text-transparent md:text-[2.5rem] xl:text-[3rem]">
-                My Process
+                The Process
             </h2>
             <Process />
         </section>
