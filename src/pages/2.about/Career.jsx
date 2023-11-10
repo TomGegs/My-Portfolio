@@ -4,7 +4,7 @@ function Career() {
     const careerData = [
         {
             sectionTitle: 'Career (so far!)',
-            position: 'React Developer ',
+            position: 'Front-end Developer ',
             employer: 'Student/Freelance',
             id: 'react-developer',
         },

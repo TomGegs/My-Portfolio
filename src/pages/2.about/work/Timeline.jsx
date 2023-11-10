@@ -6,30 +6,30 @@ function Timeline() {
     const careerData = [
         {
             sectionTitle: 'Career',
-            position: 'React Developer ',
-            employeer: 'Freelance',
+            position: 'Front-end Developer ',
+            employer: 'Freelance',
         },
         {
             position: '(Acting) Director Transformation Delivery Office',
-            employeer: 'Public Trustee of Queensland',
+            employer: 'Public Trustee of Queensland',
         },
         {
             position: 'Continuous Improvement (CI) Delivery Lead ',
-            employeer: 'Public Trustee of Queensland',
+            employer: 'Public Trustee of Queensland',
         },
         {
             position: 'Digital Analyst',
-            employeer: 'Public Trustee of Queensland',
+            employer: 'Public Trustee of Queensland',
         },
         {
             position: 'Business Analyst',
-            employeer: 'C.P.L. - Choice, Passion, Life',
+            employer: 'C.P.L. - Choice, Passion, Life',
             description:
                 'User research, process mapping, and requirements gathering',
         },
         {
             position: 'Business Growth Manager',
-            employeer: 'ShareStory',
+            employer: 'ShareStory',
         },
     ];
 
@@ -37,17 +37,17 @@ function Timeline() {
         {
             sectionTitle: 'Ventures',
             position: 'Co-Founder',
-            employeer: 'TOKN ',
+            employer: 'TOKN ',
             description:
                 'Startup to connect the community with XR and Web3 opportunities',
         },
         {
             position: 'Co-Founder',
-            employeer: 'Right Click Gaming',
+            employer: 'Right Click Gaming',
         },
         {
             position: 'Event Host',
-            employeer: 'RoboWars Australia',
+            employer: 'RoboWars Australia',
         },
     ];
 
@@ -55,24 +55,24 @@ function Timeline() {
         <div className="relative flex h-full w-full flex-col">
             {/* 2023 */}
             <div className={timelineStyle}>
-                {careerData.map((career, i) => (
+                {careerData.map((career) => (
                     <TimelineEvents
                         key={career.position}
                         sectionTitle={career.sectionTitle}
                         position={career.position}
-                        employeer={career.employeer}
+                        employer={career.employer}
                         description={career.description}
                     />
                 ))}
             </div>
             {/* Projects */}
             <div className={timelineStyle}>
-                {venturesData.map((venture, i) => (
+                {venturesData.map((venture) => (
                     <TimelineEvents
                         key={venture.key}
                         sectionTitle={venture.sectionTitle}
                         position={venture.position}
-                        employeer={venture.employeer}
+                        employer={venture.employer}
                         description={venture.description}
                     />
                 ))}

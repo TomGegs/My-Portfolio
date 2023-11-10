@@ -7,7 +7,7 @@ function EmailIconButton({ pulse }) {
             className="relative flex max-h-[40px] justify-self-end"
             onClick={() => {
                 const emailSubject =
-                    'Meeting with Tom Geoghegan - React Developer';
+                    'Meeting with Tom Geoghegan - Front-end Developer';
                 const emailBody = "Hi Tom, Let's grab a coffee!";
                 const mailToLink = `mailto:tomgegs@outlook.com?subject=${encodeURIComponent(
                     emailSubject
