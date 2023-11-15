@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import images from '../../data/images';
 
-function Process() {
+function ProcessCard() {
     const processArray = [
         {
             label: 'User-Centric Research',
@@ -78,4 +78,4 @@ function Process() {
     );
 }
 
-export default Process;
+export default ProcessCard;

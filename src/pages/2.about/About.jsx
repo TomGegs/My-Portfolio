@@ -1,9 +1,27 @@
-import HobbiesImage from './personal/HobbiesImage';
+import AboutImages from './personal/AboutImages';
 import images from '../../data/images';
 import Story from './personal/Story';
-import Career from './Career';
+import Experience from './work/Experience';
 
 function About() {
+    const aboutImageCardData = [
+        {
+            id: 'sunSurf',
+            description: 'Sun & Surf',
+            image: images.aboutHobbies1,
+        },
+
+        {
+            id: 'buildingProjects',
+            description: 'Building & Projects',
+            image: images.aboutHobbies3,
+        },
+        {
+            id: 'exploringAdventure',
+            description: 'Exploring & Adventure',
+            image: images.aboutHobbies2,
+        },
+    ];
     return (
         // Section Container
         <section
@@ -15,24 +33,21 @@ function About() {
                 About Me
             </h1>
 
-            <div className="group relative flex h-full w-full flex-col justify-items-center gap-4 py-3 text-white/30 lg:grid lg:grid-cols-3 ">
-                <HobbiesImage
-                    image={images.aboutHobbies1}
-                    description="Sun & Surf"
-                />
-                <HobbiesImage
-                    image={images.aboutHobbies3}
-                    description="Building & Projects"
-                />
-                <HobbiesImage
-                    image={images.aboutHobbies2}
-                    description="Exploring & Adventure"
-                />
-            </div>
+            {/* About Section Information - images at top on desktop and bottom on mobile */}
+            <div className="flex flex-col-reverse lg:flex-col">
+                <div className="group relative flex h-full w-full flex-col justify-items-center gap-4 text-white/30 lg:grid lg:grid-cols-3 ">
+                    {aboutImageCardData.map((image) => (
+                        <AboutImages
+                            key={image.id}
+                            description={image.description}
+                            image={image.image}
+                        />
+                    ))}
+                </div>
 
-            {/* About Section Information */}
-            <Story />
-            <Career />
+                <Story />
+                <Experience />
+            </div>
         </section>
     );
 }

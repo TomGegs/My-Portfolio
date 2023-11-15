@@ -19,6 +19,7 @@ function ContactForm({ handleSubmit }) {
 
     const [isLoading, setIsLoading] = useState(false);
     const [buttonTextIndex, setButtonTextIndex] = useState(0);
+    const [emailError, setEmailError] = useState(null);
 
     const form = useRef(null);
     const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -33,14 +34,11 @@ function ContactForm({ handleSubmit }) {
         e.preventDefault();
         setIsLoading(true);
 
-        emailjs.sendForm(serviceId, templateId, form.current, userId).then(
-            (result) => {
-                console.log(result.text);
-            },
-            (error) => {
-                console.log(error.text);
-            }
-        );
+        emailjs
+            .sendForm(serviceId, templateId, form.current, userId)
+            .then((error) => {
+                setEmailError(error.text);
+            });
         e.target.reset();
 
         setButtonTextIndex((prevIndex) => {
@@ -59,7 +57,7 @@ function ContactForm({ handleSubmit }) {
             onSubmit={onSubmit}
             className="mb-4 w-full rounded pt-6 text-black shadow-md lg:w-[90%]"
         >
-            <div className="mb-4 flex flex-col lg:flex-row ">
+            <div className="z-20 mb-4 flex flex-col lg:flex-row">
                 <input
                     type="text"
                     name="firstName"
@@ -69,7 +67,7 @@ function ContactForm({ handleSubmit }) {
                     required
                     maxLength={500}
                     placeholder="First name"
-                    className="focus:shadow-outline mb-4 appearance-none rounded-lg border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none lg:mb-0 lg:mr-2 lg:w-[50%]"
+                    className="focus:shadow-outline mb-4 appearance-none rounded-lg border px-3 py-4 leading-tight text-gray-700 shadow focus:outline-none lg:mb-0 lg:mr-2 lg:w-[50%]"
                 />
                 <input
                     type="text"
@@ -80,7 +78,7 @@ function ContactForm({ handleSubmit }) {
                     required
                     maxLength={500}
                     placeholder="Last name"
-                    className="focus:shadow-outline appearance-none rounded-lg border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none lg:ml-2 lg:w-[50%]"
+                    className="focus:shadow-outline appearance-none rounded-lg border px-3 py-4 leading-tight text-gray-700 shadow focus:outline-none lg:ml-2 lg:w-[50%]"
                 />
             </div>
             <div className="mb-4">
@@ -93,7 +91,7 @@ function ContactForm({ handleSubmit }) {
                     required
                     maxLength={500}
                     placeholder="Email address"
-                    className="focus:shadow-outline w-full appearance-none rounded-lg border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                    className="focus:shadow-outline w-full appearance-none rounded-lg border px-3 py-4 leading-tight text-gray-700 shadow focus:outline-none"
                 />
             </div>
             <div className="mb-3">
@@ -117,6 +115,7 @@ function ContactForm({ handleSubmit }) {
                 >
                     {isLoading ? submitButtonText[buttonTextIndex] : 'Submit'}
                 </button>
+                {emailError && <p>Error sending email: {emailError}</p>}
             </div>
         </form>
     );

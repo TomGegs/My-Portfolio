@@ -1,6 +1,9 @@
-function TimelineEvents({ sectionTitle, employer, position }) {
+function ExperienceCard({ sectionTitle, employer, position, id }) {
     return (
-        <div className="group mb-3 flex w-full flex-col text-white/30  ">
+        <div
+            key={id}
+            className="group mb-3 flex w-full flex-col text-white/30  "
+        >
             <h3 className="   animate-gradient bg-gradient-to-r from-primary  via-green-300 to-[#8553F4] bg-clip-text text-[2rem] font-light text-transparent md:text-[2.5rem] xl:text-[3rem] ">
                 {sectionTitle || null}
             </h3>
@@ -14,4 +17,4 @@ function TimelineEvents({ sectionTitle, employer, position }) {
     );
 }
 
-export default TimelineEvents;
+export default ExperienceCard;

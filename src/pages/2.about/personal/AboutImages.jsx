@@ -1,6 +1,9 @@
-function HobbiesImage({ image, description }) {
+function AboutImages({ image, description, id }) {
     return (
-        <div className="flex w-full flex-col justify-center rounded-2xl border border-bgPrimary bg-bgPrimary/60 px-4 pt-4 text-center align-middle group-hover:text-white">
+        <div
+            key={id}
+            className="flex w-full flex-col justify-center rounded-2xl border border-bgPrimary bg-bgPrimary/60 px-4 pt-4 text-center align-middle group-hover:text-white"
+        >
             <img
                 src={image}
                 alt={`My hobbies include ${description}`}
@@ -11,4 +14,4 @@ function HobbiesImage({ image, description }) {
     );
 }
 
-export default HobbiesImage;
+export default AboutImages;

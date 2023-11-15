@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import images from '../../data/images';
-import ContactForm from './contactForm/ContactForm';
+import ContactForm from './ContactForm';
 
 function Contact() {
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -31,7 +31,7 @@ function Contact() {
         >
             {/* Img Wrapper */}
             <div className="relative flex h-full w-full flex-col pt-2 lg:flex-row ">
-                <div className=" animate-gradientFast absolute top-4 h-[70%] w-[80%] rounded-[25%] bg-gradient-to-b from-primary/25 via-secondary/40 to-altSecond/50 blur-[120px] lg:top-20 lg:w-[30%] " />
+                <div className=" animate-gradientFast absolute top-4 -z-10 h-[70%] w-[80%] rounded-[25%] bg-gradient-to-b from-primary/25 via-secondary/40 to-altSecond/50 blur-[120px] lg:top-20 lg:w-[30%] " />
                 <img
                     src={images.myHeadshot}
                     alt="headshot of Tom Geoghegan"

@@ -1,5 +1,5 @@
-import images from '../../data/images';
-import EmailIconButton from '../buttons/EmailIconButton';
+import images from '../../../data/images';
+import EmailIconButton from '../../buttons/EmailIconButton';
 
 function ContactIcons() {
     const contactData = [

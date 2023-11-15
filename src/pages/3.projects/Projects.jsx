@@ -1,14 +1,14 @@
 /* spell-checker: disable */
 
 import portfolioItems from '../../data/portfolioItems';
-import MyProjects from './MyProjects';
-import Process from './Process';
-import Tech from './Tech';
+import ShowcaseCard from './ShowcaseCard';
+import ProcessCard from './ProcessCard';
+import TechCard from './TechCard';
 
 function Projects() {
     return (
         <section
-            id="projects"
+            id="/projects"
             className="mx-auto mb-6 mt-20 flex w-full flex-col justify-center px-10 text-white lg:mb-12 lg:mt-28 lg:px-24 lg:pt-0 "
         >
             {/* Title */}
@@ -19,7 +19,7 @@ function Projects() {
             <h2 className="mb-[1.5rem] animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] font-light text-transparent md:text-[2.5rem] xl:text-[3rem]">
                 The Tech
             </h2>
-            <Tech />
+            <TechCard />
             <h2 className="mt-[1.5rem] animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] font-light text-transparent md:text-[2.5rem] xl:text-[3rem]">
                 The Showcase
             </h2>
@@ -28,7 +28,7 @@ function Projects() {
                 {/* Projects */}
 
                 {portfolioItems.map((project) => (
-                    <MyProjects
+                    <ShowcaseCard
                         key={project.key}
                         title={project.title}
                         description={project.description}
@@ -43,7 +43,7 @@ function Projects() {
             <h2 className="mb-[1.5rem] animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] font-light text-transparent md:text-[2.5rem] xl:text-[3rem]">
                 The Process
             </h2>
-            <Process />
+            <ProcessCard />
         </section>
     );
 }

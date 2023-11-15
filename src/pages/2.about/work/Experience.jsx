@@ -1,4 +1,4 @@
-import TimelineEvents from './work/TimelineEvents';
+import ExperienceCard from './ExperienceCard';
 
 function Career() {
     const careerData = [
@@ -88,7 +88,7 @@ function Career() {
             {/* Career */}
             <div className="flex flex-col ">
                 {careerData.map((career) => (
-                    <TimelineEvents
+                    <ExperienceCard
                         key={career.id}
                         sectionTitle={career.sectionTitle}
                         position={career.position}
@@ -102,7 +102,7 @@ function Career() {
                 {/* Ventures */}
 
                 {businessVenturesData.map((venture) => (
-                    <TimelineEvents
+                    <ExperienceCard
                         key={venture.id}
                         sectionTitle={venture.sectionTitle}
                         position={venture.position}
@@ -115,7 +115,7 @@ function Career() {
                 {/* Other Ventures */}
 
                 {otherVenturesData.map((otherVenture) => (
-                    <TimelineEvents
+                    <ExperienceCard
                         key={otherVenture.id}
                         sectionTitle={otherVenture.sectionTitle}
                         position={otherVenture.position}

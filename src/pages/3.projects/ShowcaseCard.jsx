@@ -4,7 +4,7 @@ import Chips from '../../components/chips/Chips';
 import images from '../../data/images';
 import videos from '../../data/videos';
 
-function MyProjects({
+function ShowcaseCard({
     title,
     description,
     techUsed,
@@ -86,4 +86,4 @@ function MyProjects({
     );
 }
 
-export default MyProjects;
+export default ShowcaseCard;

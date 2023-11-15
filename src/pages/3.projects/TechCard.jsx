@@ -1,6 +1,6 @@
 import images from '../../data/images';
 
-function Tech() {
+function TechCard() {
     const techIconIndex = [
         { image: 'html', label: 'HTML5' },
         { image: 'css', label: 'CSS3' },
@@ -42,4 +42,4 @@ function Tech() {
     );
 }
 
-export default Tech;
+export default TechCard;

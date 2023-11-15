@@ -1,5 +1,5 @@
 import images from '../../data/images';
-import HeroCard from './HeroCard';
+import TextCard from './TextCard';
 import HomeCard from './HomeCard';
 
 function Home() {
@@ -44,7 +44,7 @@ function Home() {
             className="group mx-auto mb-6 mt-20 flex w-full flex-col justify-center gap-4 px-10 text-white lg:mb-12 lg:mt-28 lg:grid lg:min-h-[80dvh] lg:grid-cols-6 lg:grid-rows-2 lg:gap-6 lg:px-24 lg:pt-0 "
         >
             {/* Left side of home */}
-            <HeroCard />
+            <TextCard />
             {/* Tiles right side */}
             {cardDataLarge.map((item) => (
                 <div

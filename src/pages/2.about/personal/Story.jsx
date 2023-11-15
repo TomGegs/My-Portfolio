@@ -2,7 +2,7 @@ function Story() {
     return (
         <div className="group group relative flex h-full w-full flex-col py-4 font-Nohemi text-white/30 lg:py-12">
             {/* Section Title */}
-            <h2 className="animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text py-2  text-[2rem] font-light text-transparent md:text-[2.5rem] xl:text-[3rem]">
+            <h2 className="animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text py-2 text-[2rem] font-light text-transparent md:text-[2.5rem] xl:text-[3rem]">
                 Hello there{' '}
                 <span className="inline-flex animate-wave text-white ">👋</span>{' '}
                 I&apos;m Tom

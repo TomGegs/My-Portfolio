@@ -2,7 +2,7 @@ import ButtonDownloadHandler from '../../components/buttons/ButtonDownloadHandle
 import SocialButtons from '../../components/buttons/SocialLinks';
 import Chips from '../../components/chips/Chips';
 
-function HeroCard() {
+function TextCard() {
     const mainTech = [
         'React.JS',
         'JavaScript',
@@ -56,4 +56,4 @@ function HeroCard() {
     );
 }
 
-export default HeroCard;
+export default TextCard;

@@ -2,7 +2,6 @@ import { Link, useRouteError } from 'react-router-dom';
 
 function ErrorPage() {
     const error = useRouteError();
-    console.error(error);
     return (
         <div className="h-[60dvh] w-full ">
             <h1>Oops!</h1>

@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import NavBgOnScroll from '../../hooks/NavOnScroll';
+import NavBgOnScroll from '../../../hooks/NavOnScroll';
 
-import images from '../../data/images';
+import images from '../../../data/images';
 
 import NavBarMobileMenuItems from './NavBarMobileMenuItems';
-import ButtonDownloadHandler from '../buttons/ButtonDownloadHandler';
-import SocialButtons from '../buttons/SocialLinks';
+import ButtonDownloadHandler from '../../buttons/ButtonDownloadHandler';
+import SocialButtons from '../../buttons/SocialLinks';
 
 function NavBar() {
     // Mobile menu toggle & state
