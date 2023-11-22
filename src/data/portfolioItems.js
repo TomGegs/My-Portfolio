@@ -35,22 +35,6 @@ export default [
         button2Url: 'https://github.com/TomGegs/businessCard',
     },
     {
-        key: 'e-Commerce Website',
-        title: 'e-Commerce Website',
-        description:
-            'e-Commerce website using Strapi CMS and Stripe payment API. Users can browse products, add to cart and checkout. Admins can add, edit and delete products and categories. ',
-        techUsed: [
-            'React',
-            'TypeScript',
-            'TailwindCSS',
-            'FireBase',
-            'Node',
-            'Axios',
-            'Stripe',
-        ],
-        projectImage: 'underConstruction',
-    },
-    {
         key: 'meeting calculator',
         title: 'econoMeet',
         description:
@@ -63,6 +47,24 @@ export default [
             'React Hook Form',
             'Tanstack',
             'Radix UI',
+        ],
+        projectImage: 'ProjectsEconoMeet',
+        button1Url: 'https://meeting-calculator-three.vercel.app/',
+        button2Url: 'https://github.com/TomGegs/MeetingCalculator',
+    },
+    {
+        key: 'e-Commerce Website',
+        title: 'e-Commerce Website',
+        description:
+            'e-Commerce website using Strapi CMS and Stripe payment API. Users can browse products, add to cart and checkout. Admins can add, edit and delete products and categories. ',
+        techUsed: [
+            'React',
+            'TypeScript',
+            'TailwindCSS',
+            'FireBase',
+            'Node',
+            'Axios',
+            'Stripe',
         ],
         projectImage: 'underConstruction',
     },
