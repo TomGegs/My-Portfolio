@@ -13,28 +13,6 @@ export default [
         button2Url: 'https://github.com/TomGegs/copi-rite-AI-marketing',
     },
     {
-        key: 'Copi.Lite',
-        title: 'Copi.Lite',
-        description:
-            "First iteration of Copi.Rite. Targeted the minimum viable function of the application's purpose of simplifying the process of generating digital marketing copy with AI.",
-        techUsed: ['Next.js', 'TypeScript', 'TailwindCSS', 'OpenAI API'],
-        projectImage: 'CopiRiteV1',
-        projectVideo: 'CopiLiteVideo',
-        button1Url: 'https://goodcopyright.netlify.app/',
-        button2Url: 'https://github.com/TomGegs/copywriting-ai-product',
-    },
-    {
-        key: 'Digital Business Card',
-        title: 'Digital Business Card',
-        description:
-            "Digital business card application that 3D tracks the user's mouse or touch.",
-        techUsed: ['React', 'JavaScript', 'CSS', 'TailwindCSS'],
-        projectImage: 'BusinessCardProject',
-        projectVideo: 'BusinessCardVideo',
-        button1Url: 'https://tomgcontact.netlify.app/',
-        button2Url: 'https://github.com/TomGegs/businessCard',
-    },
-    {
         key: 'meeting calculator',
         title: 'econoMeet',
         description:
@@ -51,6 +29,28 @@ export default [
         projectImage: 'ProjectsEconoMeet',
         button1Url: 'https://meeting-calculator-three.vercel.app/',
         button2Url: 'https://github.com/TomGegs/MeetingCalculator',
+    },
+    {
+        key: 'Digital Business Card',
+        title: 'Digital Business Card',
+        description:
+            "Digital business card application that 3D tracks the user's mouse or touch.",
+        techUsed: ['React', 'JavaScript', 'CSS', 'TailwindCSS'],
+        projectImage: 'BusinessCardProject',
+        projectVideo: 'BusinessCardVideo',
+        button1Url: 'https://tomgcontact.netlify.app/',
+        button2Url: 'https://github.com/TomGegs/businessCard',
+    },
+    {
+        key: 'Copi.Lite',
+        title: 'Copi.Lite',
+        description:
+            "First iteration of Copi.Rite. Targeted the minimum viable function of the application's purpose of simplifying the process of generating digital marketing copy with AI.",
+        techUsed: ['Next.js', 'TypeScript', 'TailwindCSS', 'OpenAI API'],
+        projectImage: 'CopiRiteV1',
+        projectVideo: 'CopiLiteVideo',
+        button1Url: 'https://goodcopyright.netlify.app/',
+        button2Url: 'https://github.com/TomGegs/copywriting-ai-product',
     },
     {
         key: 'e-Commerce Website',
