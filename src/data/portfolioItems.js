@@ -27,7 +27,7 @@ export default [
             'Radix UI',
         ],
         projectImage: 'ProjectsEconoMeet',
-        button1Url: 'https://meeting-calculator-three.vercel.app/',
+        button1Url: 'https://economeet.vercel.app/',
         button2Url: 'https://github.com/TomGegs/MeetingCalculator',
     },
     {
