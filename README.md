@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/TomGegs/My-Portfolio">
-    <img src=",/public.logoIcon.svg" alt="Logo" width="80" height="80">
+    <img src="./public/logoIcon.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Tom Geoghegan - Developer Portfolio</h3>
@@ -9,8 +9,6 @@
     Welcome 🙋‍♂️ git on in here, have a gander at my latest projects and book in a coffee & chat!
   </p>
 </div>
-
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 ## Description
 
@@ -22,15 +20,15 @@ This is my personal portfolio website built with React and Vite. It showcases my
 
 ### Built With
 
+-   [![HTML5][HTML5]][HTML-url]
+-   [![CSS3][CSS3]][CSS-url]
+-   [![JavaScript][JavaScript]][JavaScript-url]
 -   [![React][React.js]][React-url]
 -   [![TailwindCSS][Tailwindcss]][Tailwind-url]
 -   [![Vercel][Vercel]][Vercel-url]
 -   [![Vite][Vite]][Vite-url]
--   [![CSS3][CSS3]][CSS-url]
--   [![HTML5][HTML5]][HTML-url]
--   [![JavaScript][JavaScript]][JavaScript-url]
--   [![ESLint][ESLint]][ESLint-url]
 -   [![Prettier][Prettier]][Prettier-url]
+-   [![ESLint][ESLint]][ESLint-url]
 -   [![Framer][Framer]][Framer-url]
 -   [![ReactRouter][ReactRouter]][ReactRouter-url]
 
@@ -48,7 +46,7 @@ This is my personal portfolio website built with React and Vite. It showcases my
 
 ## A Fun Look Back @ Previous Portfolio Versions
 
--   <a href="./src/assets/Portfoliov1.webp">Version 1 - (Screenshot)</a>
+-   <a href="https://tomgeoghegan.vercel.app/Portfoliov1.webp">Version 1 - (Screenshot)</a>
 -   <a href="https://old-tomg-portfolio.netlify.app/">Version 2</a>
 -   <a href="https://tomg-portfolio-old-v2.netlify.app/">Version 3</a>
 
