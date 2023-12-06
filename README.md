@@ -12,7 +12,7 @@
 
 ## Description
 
-[![Product Name Screen Shot][product-screenshot]](https://tomgeoghegan.vercel.app/projects)
+[![Product Name Screen Shot][product-screenshot]](https://tomgeoghegan.vercel.app)
 
 This is my personal portfolio website built with React and Vite. It showcases my work, provides information about me, and includes a contact form for reaching out.
 
