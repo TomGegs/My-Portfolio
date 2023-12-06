@@ -37,19 +37,20 @@ This is my personal portfolio website built with React and Vite. It showcases my
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Features
-- Bento-Box style design 
-- Projects page: A showcase of my projects.
-- About page: Information about me, my professional history and hobbies.
-- Contact page: A form to organise a coffee & chat.
-- Error page: A 404 page for any unknown routes.
+
+-   Bento-Box style design
+-   Projects page: A showcase of my projects.
+-   About page: Information about me, my professional history and hobbies.
+-   Contact page: A form to organise a coffee & chat.
+-   Error page: A 404 page for any unknown routes.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## A Fun Look Back @ Previous Versions
+## A Fun Look Back @ Previous Portfolio Versions
 
--   <a href="#readme-top">Version 1</a>
--   <a href="#readme-top">Version 1</a>
--   <a href="#readme-top">Version 1</a>
+-   <a href="./src/assets/Portfoliov1.webp">Version 1 - (Screenshot)</a>
+-   <a href="https://old-tomg-portfolio.netlify.app/">Version 2</a>
+-   <a href="https://tomg-portfolio-old-v2.netlify.app/">Version 3</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
