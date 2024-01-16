@@ -6,7 +6,7 @@
 <h3 align="center">Tom Geoghegan - Developer Portfolio</h3>
 
   <p align="center">
-    Welcome 🙋‍♂️ git on in here, have a gander at my latest projects and book in a coffee & chat!
+    Welcome 🙋‍♂️ git on in here, have a gander at my latest projects. Lets grab a coffee & chat!
   </p>
 </div>
 
