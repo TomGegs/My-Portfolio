@@ -4,7 +4,7 @@ function Career() {
     const careerData = [
         {
             sectionTitle: 'Career (so far!)',
-            position: 'Front-end Developer ',
+            position: 'Front-End Developer ',
             employer: 'Student/Freelance',
             id: 'react-developer',
         },
@@ -22,13 +22,6 @@ function Career() {
             position: 'Digital Analyst',
             employer: 'Public Trustee of Queensland',
             id: 'digital-analyst',
-        },
-        {
-            position: 'Business Analyst',
-            employer: 'C.P.L. - Choice, Passion, Life',
-            description:
-                'User research, process mapping,and requirements gathering',
-            id: 'business-analyst',
         },
         {
             position: 'Business Growth Manager',
