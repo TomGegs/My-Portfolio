@@ -32,6 +32,25 @@ export default [
         button2Url: 'https://github.com/TomGegs/MeetingCalculator',
     },
     {
+        key: 'Band Management SaaS',
+        title: 'Band.IT',
+        description:
+            'Initial idea from HotHack2024. Continued development to create a SaaS for band management. Users can upload .csv files of their band data to manage their finances and tour information.',
+        techUsed: [
+            'React',
+            'TypeScript',
+            'TailwindCSS',
+            'Zod',
+            'React Hook Form',
+            'React Table',
+            '',
+        ],
+        projectImage: 'ProjectsEconoMeet',
+        projectVideo: 'econoMeetVideo',
+        button1Url: 'https://economeet.vercel.app/',
+        button2Url: 'https://github.com/TomGegs/MeetingCalculator',
+    },
+    {
         key: 'Digital Business Card',
         title: 'Digital Business Card',
         description:
@@ -58,16 +77,9 @@ export default [
         title: 'e-Commerce Website',
         description:
             'e-Commerce website using Strapi CMS and Stripe payment API. Users can browse products, add to cart and checkout. Admins can add, edit and delete products and categories. ',
-        techUsed: [
-            'React',
-            'TypeScript',
-            'TailwindCSS',
-            'FireBase',
-            'Node',
-            'Axios',
-            'Stripe',
-        ],
+        techUsed: ['React', 'CSS', 'Node', 'Axios', 'Stripe'],
         projectImage: 'underConstruction',
+        projectOverlay: 'underConstruction',
     },
     {
         key: 'life expectancy calculator',
@@ -83,6 +95,7 @@ export default [
             'Framer Motion',
         ],
         projectImage: 'underConstruction',
+        projectOverlay: 'underConstruction',
     },
     // {
     //     key: "OpenAI's Dall-E Clone",

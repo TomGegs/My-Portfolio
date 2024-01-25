@@ -12,7 +12,7 @@ function TechCard() {
         { image: 'nextjs', label: 'Next.js' },
         { image: 'vite', label: 'Vite' },
         { image: 'figma', label: 'Figma' },
-        { image: 'gpt', label: 'GPT-4' },
+        { image: 'gpt', label: 'OpenAI API' },
         { image: 'midJourney', label: 'MidJourney' },
     ];
 
