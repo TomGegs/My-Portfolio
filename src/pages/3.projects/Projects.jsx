@@ -6,6 +6,14 @@ import ProcessCard from './ProcessCard';
 import TechCard from './TechCard';
 
 function Projects() {
+    const completedProjectArray = portfolioItems.filter(
+        (project) => project.completed === true
+    );
+
+    const inProgressProjectArray = portfolioItems.filter(
+        (project) => project.completed === false
+    );
+
     return (
         <section
             id="/projects"
@@ -27,7 +35,7 @@ function Projects() {
             <div className=" my-[1.5rem] flex h-full w-full flex-col gap-6 md:grid md:grid-cols-2">
                 {/* Projects */}
 
-                {portfolioItems.map((project) => (
+                {completedProjectArray.map((project) => (
                     <ShowcaseCard
                         key={project.key}
                         title={project.title}
@@ -42,9 +50,23 @@ function Projects() {
                 ))}
             </div>
             <h2 className="mt-[1.5rem] animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] font-light text-transparent md:text-[2.5rem] xl:text-[3rem]">
-                The Showcase
+                Under Development
             </h2>
-            <div className=" my-[1.5rem] flex h-full w-full flex-col gap-6 md:grid md:grid-cols-2"></div>
+            <div className="my-[1.5rem] flex h-full w-full flex-col gap-6 md:grid md:grid-cols-2">
+                {inProgressProjectArray.map((project) => (
+                    <ShowcaseCard
+                        key={project.key}
+                        title={project.title}
+                        description={project.description}
+                        techUsed={project.techUsed}
+                        projectImage={project.projectImage}
+                        projectOverlay={project.projectOverlay}
+                        projectVideo={project.projectVideo}
+                        button1Url={project.button1Url}
+                        button2Url={project.button2Url}
+                    />
+                ))}
+            </div>
             <h2 className="mb-[1.5rem] animate-gradient bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] font-light text-transparent md:text-[2.5rem] xl:text-[3rem]">
                 The Process
             </h2>
