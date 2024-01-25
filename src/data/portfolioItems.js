@@ -9,7 +9,7 @@ export default [
         techUsed: ['Next.js', 'TypeScript', 'TailwindCSS', 'OpenAI API'],
         projectImage: 'CopiRite',
         projectVideo: 'CopiRiteVideo',
-        button1Url: 'https://copi-rite.netlify.app/',
+        button1Url: 'https://copi-rite.vercel.app',
         button2Url: 'https://github.com/TomGegs/copi-rite-AI-marketing',
     },
     {
