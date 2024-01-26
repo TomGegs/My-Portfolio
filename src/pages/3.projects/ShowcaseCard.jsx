@@ -7,6 +7,7 @@ import videos from '../../data/videos';
 function ShowcaseCard({
     title,
     description,
+    completed,
     techUsed,
     projectImage,
     projectVideo,
@@ -38,7 +39,7 @@ function ShowcaseCard({
                         loading="lazy"
                     />
                 )}
-                {!button1Url ? (
+                {completed === false ? (
                     <span
                         alt="icon indicating the project is under construction"
                         className="absolute right-[40%] top-[20%] flex w-[50px] -skew-x-12 justify-center lg:right-[47%] lg:top-[40%]"
@@ -63,8 +64,9 @@ function ShowcaseCard({
                 {/* button 1 and button 2 url links */}
                 <div className=" flex flex-row ">
                     <ButtonMain
-                        label={`${button1Url ? 'View Site' : 'Coming Soon'}`}
+                        label={`${completed ? 'View Site' : 'Coming Soon'}`}
                         url={button1Url}
+                        completed={completed}
                     />
 
                     {button2Url ? (

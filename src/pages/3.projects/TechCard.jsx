@@ -19,7 +19,7 @@ function TechCard() {
     return (
         <div className="flex w-full flex-col rounded-2xl border-bgPrimary bg-gradient-to-b from-bgPrimary to-[#d7e4e0]/10 p-6 font-encode text-white shadow-md backdrop-blur lg:p-10">
             {techIconIndex ? (
-                <div className="grid grid-cols-3 gap-10 lg:grid-cols-4 lg:flex-wrap lg:gap-12">
+                <div className="grid grid-cols-3 gap-10 lg:grid-cols-6 lg:flex-wrap lg:gap-12">
                     {techIconIndex.map((icon) => (
                         <div
                             key={icon.label}

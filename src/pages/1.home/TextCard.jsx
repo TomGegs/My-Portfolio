@@ -20,15 +20,21 @@ function TextCard() {
             {/* Content Wrapper */}
             {/* Title */}
             <h1 className="block animate-gradient overflow-visible bg-gradient-to-r from-primary via-green-300 to-[#8553F4] bg-clip-text text-[2rem] font-semibold leading-tight text-transparent md:text-[1rem] lg:text-[2rem] xl:text-[3rem] 2xl:text-[3.5rem] min-[1920px]:text-[5rem]">
-                Front-End Developer <br />
+                Building Ideas Into Business <br />
             </h1>
             {/* Introduction blurb */}
             <p className="mt-3 font-Nohemi font-thin leading-normal text-[#FFFDFA] lg:mt-8 xl:text-[1.5rem]">
                 Hi, I&apos;m Tom
                 <span className="inline-flex animate-wave">👋</span>
                 <br /> A Front-End Developer, lifelong learner and start-up
-                enthusiast. <br className="hidden lg:block" /> Let grab a coffee
-                and have a chat!
+                enthusiast.
+                <br />
+                <br />
+                I blend experience in Project Management and Software
+                Development to meet customer&apos;s needs and business&apos;
+                goals.
+                <br />
+                <br /> Let&apos;s grab a coffee and chat!
             </p>
             {/* Wrapper for background div */}
             <div className="relative my-3 flex lg:my-10">

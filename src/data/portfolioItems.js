@@ -25,7 +25,7 @@ export default [
             'TailwindCSS',
             'Zod',
             'React Hook Form',
-            'Tanstack',
+            'React Table',
             'Radix UI',
         ],
         projectImage: 'ProjectsEconoMeet',
@@ -49,7 +49,7 @@ export default [
             'Shadcn UI',
         ],
         projectImage: 'ProjectsEconoMeet',
-        projectVideo: 'econoMeetVideo',
+        projectVideo: 'BandITVideo',
         button1Url: 'https://economeet.vercel.app/',
         button2Url: 'https://github.com/TomGegs/MeetingCalculator',
     },
@@ -66,6 +66,29 @@ export default [
         button2Url: 'https://github.com/TomGegs/businessCard',
     },
     {
+        key: "OpenAI's Dall-E Clone",
+        completed: true,
+        title: "OpenAI's Dall-E Clone",
+        description:
+            "MERN Stack clone of OpenAI's image generator DALL-E AI. Utilises OpenAI's API to generate images based on user's inputs and stores images on MongoDB & Cloudinary.",
+        techUsed: [
+            'React',
+            'CSS',
+            'TailwindCSS',
+            'Redux',
+            'Node',
+            'MongoDB',
+            'Express',
+            'Cloudinary',
+            'OpenAI API',
+        ],
+        projectImage: 'ProjectDALLEClone',
+        projectVideo: 'GegsyImageGeneratorVideo',
+        button1Url: 'https://gegs-e-x-dall-e.netlify.app/',
+        button2Url:
+            'https://github.com/TomGegs/AI-Image-generator-clone-DALL-E',
+    },
+    {
         key: 'Copi.Lite',
         completed: true,
         title: 'Copi.Lite',
@@ -77,35 +100,66 @@ export default [
         button1Url: 'https://goodcopyright.netlify.app/',
         button2Url: 'https://github.com/TomGegs/copywriting-ai-product',
     },
+
+    // Under Development Projects
+
     {
-        key: "OpenAI's Dall-E Clone",
-        completed: true,
-        title: "OpenAI's Dall-E Clone",
+        key: 'tempo',
+        completed: false,
+        title: 'Tempo',
         description:
-            "Text to image generator clone of the DALL-E AI. Utilises OpenAI's API to generate images based on user's inputs",
-        techUsed: ['React', 'Redux', 'Node', 'MongoDB', 'Javascript'],
-        projectImage: 'ProjectDALLEClone',
+            'V2 of econoMeet meeting cost calculator. Imrpoved UI, design, micro-interactions and made  cost & time tracking clearer.',
+        techUsed: [
+            'React',
+            'TypeScript',
+            'TailwindCSS',
+            'Zod',
+            'React Hook Form',
+            'React Table',
+            'Radix UI',
+        ],
+        projectImage: 'underConstruction',
+        projectVideo: 'TempoVideo',
+        button1Url: 'https://github.com/TomGegs/Tempo-MeetingCalculator',
+        button2Url: 'https://github.com/TomGegs/Tempo-MeetingCalculator',
+    },
+    {
+        key: 'HitPoints',
+        completed: false,
+        title: 'HitPoints',
+        description:
+            'Life expectancy calculator utilising census data from Australian Bureau of Statistics.',
+        techUsed: [
+            'React',
+            'TypeScript',
+            'TailwindCSS',
+            'REST API',
+            'MatterJS',
+            'Framer Motion',
+        ],
+        projectImage: 'underConstruction',
+        projectVideo: 'HitpointsVideo',
+
         button1Url: 'https://gegs-e-x-dall-e.netlify.app/',
-        button2Url:
-            'https://github.com/TomGegs/AI-Image-generator-clone-DALL-E',
+        button2Url: 'https://github.com/TomGegs/HitPoints',
     },
     {
         key: 'e-Commerce Website 1',
         completed: false,
-        title: 'e-Commerce Website 1',
+        title: 'Full-Stack e-Commerce Website 1',
         description:
             'e-Commerce website using Strapi CMS and Stripe payment. Users can browse products, add to cart and checkout. Admins can add, edit and delete products and categories. ',
-        techUsed: ['React', 'CSS', 'Node', 'Axios', 'Stripe'],
+        techUsed: ['React', 'CSS', 'SASS', 'Node', 'Axios', 'Stripe'],
         projectImage: 'underConstruction',
-        projectOverlay: 'underConstruction',
+        projectVideo: 'eCommerece1Video',
+
         button1Url: 'https://gegs-e-x-dall-e.netlify.app/',
-        button2Url:
-            'https://github.com/TomGegs/AI-Image-generator-clone-DALL-E',
+        button2Url: 'https://github.com/TomGegs/ecomWebsiteProject',
     },
     {
         key: 'e-Commerce Website 2',
         completed: false,
-        title: 'e-Commerce Website 2',
+        title: 'Full-Stack e-Commerce Website 2',
         description:
             'e-Commerce website using Firebase for authenticatoin, Firestore for data management and Stripe payment. Users can browse products, add to cart and checkout. Admins can add, edit and delete products and categories. ',
         techUsed: [
@@ -119,40 +173,9 @@ export default [
             'Stripe',
         ],
         projectImage: 'underConstruction',
-        projectOverlay: 'underConstruction',
+        projectVideo: 'eCommerece2Video',
+
         button1Url: 'https://gegs-e-x-dall-e.netlify.app/',
-        button2Url:
-            'https://github.com/TomGegs/AI-Image-generator-clone-DALL-E',
+        button2Url: 'https://github.com/TomGegs/Ecom-site-Teachwear',
     },
-    {
-        key: 'life expectancy calculator',
-        completed: false,
-        title: 'HitPoints',
-        description:
-            'Life expectancy calculator utilising census data from Australian Bureau of Statistics .',
-        techUsed: [
-            'React',
-            'TypeScript',
-            'TailwindCSS',
-            'REST API',
-            'MatterJS',
-            'Framer Motion',
-        ],
-        projectImage: 'underConstruction',
-        projectOverlay: 'underConstruction',
-        button1Url: 'https://gegs-e-x-dall-e.netlify.app/',
-        button2Url:
-            'https://github.com/TomGegs/AI-Image-generator-clone-DALL-E',
-    },
-    // {
-    //     key: "OpenAI's Dall-E Clone",
-    //     title: "OpenAI's Dall-E Clone",
-    //     description:
-    //         "Text to image generator clone of the DALL-E AI. Utilises OpenAI's API to generate images based on user's inputs",
-    // techUsed: ['React', 'Redux', 'Node', 'MongoDB', 'Javascript'],
-    //     projectImage: 'ProjectDALLEClone',
-    //     button1Url: 'https://gegs-e-x-dall-e.netlify.app/',
-    //     button2Url:
-    //         'https://github.com/TomGegs/AI-Image-generator-clone-DALL-E',
-    // },
 ];

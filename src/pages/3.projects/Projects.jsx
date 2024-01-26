@@ -39,10 +39,10 @@ function Projects() {
                     <ShowcaseCard
                         key={project.key}
                         title={project.title}
+                        completed={project.completed}
                         description={project.description}
                         techUsed={project.techUsed}
                         projectImage={project.projectImage}
-                        projectOverlay={project.projectOverlay}
                         projectVideo={project.projectVideo}
                         button1Url={project.button1Url}
                         button2Url={project.button2Url}
