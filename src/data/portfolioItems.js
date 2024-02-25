@@ -50,8 +50,8 @@ export default [
         ],
         projectImage: 'ProjectsEconoMeet',
         projectVideo: 'BandITVideo',
-        button1Url: 'https://economeet.vercel.app/',
-        button2Url: 'https://github.com/TomGegs/MeetingCalculator',
+        button1Url: 'https://band-it-music.vercel.app/',
+        button2Url: 'https://github.com/TomGegs/Band.ly',
     },
     {
         key: 'Digital Business Card',
@@ -140,7 +140,7 @@ export default [
         projectImage: 'underConstruction',
         projectVideo: 'HitpointsVideo',
 
-        button1Url: 'https://gegs-e-x-dall-e.netlify.app/',
+        button1Url: 'https://github.com/TomGegs/HitPoints',
         button2Url: 'https://github.com/TomGegs/HitPoints',
     },
     {
@@ -153,7 +153,7 @@ export default [
         projectImage: 'underConstruction',
         projectVideo: 'eCommerece1Video',
 
-        button1Url: 'https://gegs-e-x-dall-e.netlify.app/',
+        button1Url: 'https://github.com/TomGegs/ecomWebsiteProject',
         button2Url: 'https://github.com/TomGegs/ecomWebsiteProject',
     },
     {
@@ -175,7 +175,7 @@ export default [
         projectImage: 'underConstruction',
         projectVideo: 'eCommerece2Video',
 
-        button1Url: 'https://gegs-e-x-dall-e.netlify.app/',
+        button1Url: 'https://github.com/TomGegs/Ecom-site-Teachwear',
         button2Url: 'https://github.com/TomGegs/Ecom-site-Teachwear',
     },
 ];
