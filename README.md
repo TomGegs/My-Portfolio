@@ -37,7 +37,7 @@ This is my personal portfolio website built with React and Vite. It showcases my
 ## Features
 
 -   Bento-Box style design
--   Projects page: A showcase of my projects.
+-   Projects page: A showcase of my latest projects.
 -   About page: Information about me, my professional history and hobbies.
 -   Contact page: A form to organise a coffee & chat.
 -   Error page: A 404 page for any unknown routes.
