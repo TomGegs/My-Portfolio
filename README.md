@@ -14,7 +14,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://tomgeoghegan.vercel.app)
 
-This is my personal portfolio website built with React and Vite. It showcases my work, provides information about me, and includes a contact form for reaching out.
+Personal portfolio website built with React and Vite to showcase my work. The site provides some interesting information about me and includes a contact form for connecting.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -37,7 +37,7 @@ This is my personal portfolio website built with React and Vite. It showcases my
 ## Features
 
 -   Bento-Box style design
--   Projects page: A showcase of my projects.
+-   Projects page: A showcase of my latest projects.
 -   About page: Information about me, my professional history and hobbies.
 -   Contact page: A form to organise a coffee & chat.
 -   Error page: A 404 page for any unknown routes.
