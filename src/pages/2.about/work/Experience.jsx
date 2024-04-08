@@ -1,14 +1,28 @@
+import Divider from '../../../components/divider/Divider';
 import ExperienceCard from './ExperienceCard';
 
 function Career() {
     const careerData = [
         {
-            sectionTitle: 'Career (so far!)',
+            sectionTitle: 'Dev Career',
             position: 'Front-End Developer ',
-            employer: 'Freelance',
+            employer: 'Recovere.Org',
             id: 'react-developer',
         },
         {
+            position: 'Front-End Developer ',
+            employer: 'Queensland XR Hub',
+            id: 'react-developer',
+        },
+        {
+            position: 'Web Develoepr',
+            employer: 'Gest Health Australia',
+            id: 'react-developer',
+        },
+    ];
+    const previousExperienceData = [
+        {
+            sectionTitle: 'Previous Exp',
             position: '(Acting) Director Transformation Delivery Office',
             employer: 'Public Trustee of Queensland',
             id: 'director-transformation-delivery-office',
@@ -79,7 +93,7 @@ function Career() {
     return (
         <div className="relative flex h-full w-full flex-col justify-between gap-y-4 py-4 lg:flex-row lg:gap-y-0 lg:rounded-2xl lg:border-bgPrimary lg:bg-gradient-to-b lg:from-bgPrimary lg:to-[#d7e4e0]/10 lg:p-10 lg:shadow-md lg:backdrop-blur">
             {/* Career */}
-            <div className="flex flex-col ">
+            <div className="flex flex-col lg:px-2">
                 {careerData.map((career) => (
                     <ExperienceCard
                         key={career.id}
@@ -90,8 +104,21 @@ function Career() {
                     />
                 ))}
             </div>
-
-            <div className="flex h-fit flex-col rounded-2xl border-bgPrimary from-bgPrimary to-[#d7e4e0]/0 shadow-md backdrop-blur lg:bg-gradient-to-b lg:px-10 lg:pb-2">
+            <Divider />
+            {/* Previous Experience */}
+            <div className="flex flex-col lg:px-2 ">
+                {previousExperienceData.map((career) => (
+                    <ExperienceCard
+                        key={career.id}
+                        sectionTitle={career.sectionTitle}
+                        position={career.position}
+                        employer={career.employer}
+                        description={career.description}
+                    />
+                ))}
+            </div>
+            <Divider />
+            <div className="flex h-fit flex-col rounded-2xl border-bgPrimary lg:px-2 lg:pb-2">
                 {/* Ventures */}
 
                 {businessVenturesData.map((venture) => (
@@ -104,7 +131,8 @@ function Career() {
                     />
                 ))}
             </div>
-            <div className="flex h-fit flex-col rounded-2xl border-bgPrimary from-bgPrimary to-[#d7e4e0]/10 shadow-md backdrop-blur lg:bg-gradient-to-b lg:px-10 lg:pb-2">
+            <Divider />
+            <div className="flex h-fit flex-col rounded-2xl border-bgPrimary lg:px-2 lg:pb-2">
                 {/* Other Ventures */}
 
                 {otherVenturesData.map((otherVenture) => (
