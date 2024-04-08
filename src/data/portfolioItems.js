@@ -4,6 +4,7 @@ export default [
     {
         key: 'Copi.Rite',
         completed: true,
+        firstIteration: false,
         title: 'Copi.Rite',
         description:
             "The interface guides users through simple steps to generate marketing copy for their product or service. Utilises OpenAI's API to generate digital marketing copy based on user's inputs. ",
@@ -14,11 +15,12 @@ export default [
         button2Url: 'https://github.com/TomGegs/copi-rite-AI-marketing',
     },
     {
-        key: 'econoMeet',
+        key: 'tempo',
         completed: true,
-        title: 'econoMeet',
+        firstIteration: false,
+        title: 'Tempo',
         description:
-            'A meeting cost calculator. Users can enter the number of attendees and the average hourly rate of each attendee to calculate the cost of the meeting.',
+            'Real-time cost interface for meetings. Users can enter the number of attendees and the average monthly, weekly or hourly rate of attendees. A clock timer helps to keep track of the meeting time while the $ cost for the meetig updates/increases each second.',
         techUsed: [
             'React',
             'TypeScript',
@@ -26,16 +28,18 @@ export default [
             'Zod',
             'React Hook Form',
             'React Table',
-            'Radix UI',
+            'Spline',
+            'Shadcn UI',
         ],
-        projectImage: 'ProjectsEconoMeet',
-        projectVideo: 'econoMeetVideo',
-        button1Url: 'https://economeet.vercel.app/',
-        button2Url: 'https://github.com/TomGegs/MeetingCalculator',
+        projectImage: 'ProjectsTempo',
+        projectVideo: 'TempoVideo',
+        button1Url: 'https://tempo-meeting-timer.vercel.app/',
+        button2Url: 'https://github.com/TomGegs/Tempo-MeetingCalculator',
     },
     {
         key: 'Band.IT',
         completed: true,
+        firstIteration: false,
         title: 'Band.IT',
         description:
             'Idea from HotHack2024 hackathon. Continued development of project after hackathon. Landing Page only. Band.IT enables users to upload .csv files of their band data to manage their finances and tour information.',
@@ -48,7 +52,7 @@ export default [
             'React Table',
             'Shadcn UI',
         ],
-        projectImage: 'ProjectsEconoMeet',
+        projectImage: 'ProjectsBandIT',
         projectVideo: 'BandITVideo',
         button1Url: 'https://band-it-music.vercel.app/',
         button2Url: 'https://github.com/TomGegs/Band.ly',
@@ -56,6 +60,7 @@ export default [
     {
         key: 'Digital Business Card',
         completed: true,
+        firstIteration: false,
         title: 'Digital Business Card',
         description:
             "Digital business card application that 3D tracks the user's mouse or touch.",
@@ -68,6 +73,7 @@ export default [
     {
         key: "OpenAI's Dall-E Clone",
         completed: true,
+        firstIteration: false,
         title: "OpenAI's Dall-E Clone",
         description:
             "MERN Stack clone of OpenAI's image generator DALL-E AI. Utilises OpenAI's API to generate images based on user's inputs and stores images on MongoDB & Cloudinary.",
@@ -91,6 +97,7 @@ export default [
     {
         key: 'Copi.Lite',
         completed: true,
+        firstIteration: true,
         title: 'Copi.Lite',
         description:
             "First iteration of Copi.Rite. Targeted the minimum viable function of the application's purpose of simplifying the process of generating digital marketing copy with AI.",
@@ -101,14 +108,13 @@ export default [
         button2Url: 'https://github.com/TomGegs/copywriting-ai-product',
     },
 
-    // Under Development Projects
-
     {
-        key: 'tempo',
-        completed: false,
-        title: 'Tempo',
+        key: 'econoMeet',
+        completed: true,
+        firstIteration: true,
+        title: 'econoMeet',
         description:
-            'V2 of econoMeet meeting cost calculator. Imrpoved UI, design, micro-interactions and made  cost & time tracking clearer.',
+            'First iteration of Tempo meeting cost calculator. Initial design was targeted at corporate users.',
         techUsed: [
             'React',
             'TypeScript',
@@ -118,11 +124,13 @@ export default [
             'React Table',
             'Radix UI',
         ],
-        projectImage: 'underConstruction',
-        projectVideo: 'TempoVideo',
-        button1Url: 'https://github.com/TomGegs/Tempo-MeetingCalculator',
-        button2Url: 'https://github.com/TomGegs/Tempo-MeetingCalculator',
+        projectImage: 'ProjectsEconoMeet',
+        projectVideo: 'econoMeetVideo',
+        button1Url: 'https://economeet.vercel.app/',
+        button2Url: 'https://github.com/TomGegs/MeetingCalculator',
     },
+
+    // Under Development Projects
     {
         key: 'HitPoints',
         completed: false,

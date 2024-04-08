@@ -73,6 +73,8 @@ import ProjectFinanceWebsite from '../assets/ProjectFinanceWebsite.webp';
 import ProjectsSpotifyPlaylist from '../assets/ProjectSpotifyPlaylist.webp';
 import BusinessCardProject from '../assets/BusinessCardProject.webp';
 import ProjectsEconoMeet from '../assets/ProjectsEconoMeet.webp';
+import ProjectsTempo from '../assets/ProjectsTempo.webp';
+import ProjectsBandIT from '../assets/ProjectsBandIT.webp';
 
 import underConstruction from '../assets/underConstruction.webp';
 
@@ -147,6 +149,8 @@ const images = {
     CopiRiteV1,
     BusinessCardProject,
     ProjectsEconoMeet,
+    ProjectsTempo,
+    ProjectsBandIT,
     contactFg,
     contactBg,
     aboutWorkBg,
