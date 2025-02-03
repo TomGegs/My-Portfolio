@@ -8,11 +8,6 @@ function ContactIcons() {
             text: 'tomgegs@outlook.com',
         },
         {
-            icon: 'phoneIcon',
-            text: '0407 250 035',
-            link: 'tel:0407250035',
-        },
-        {
             icon: 'linkedinIcon',
             text: '/in/thomas-geoghegan/',
             link: 'https://www.linkedin.com/in/thomas-geoghegan/',

@@ -125,16 +125,17 @@ function NavBar() {
                             className="h-20 rounded-l-[1rem] object-cover"
                         />
                         {/* Profile text */}
-                        <div className="flex h-20 flex-1 flex-col justify-center rounded-r-[1rem] bg-bgSecondary pl-4 pr-12">
-                            <p className="font-encode font-medium text-[#FFFDFA]">
-                                Tom Geoghegan
-                            </p>
-                            <p className="font-encode text-sm font-thin text-[#FFFDFA]">
-                                Front-End Developer
-                            </p>
-                            <p className="font-encode text-sm font-thin text-[#FFFDFA]">
-                                tomgegs@outlook.com
-                            </p>
+                        <div className="flex h-20 flex-1 flex-col justify-center rounded-r-[1rem] bg-bgSecondary pl-4 pr-12 font-encode text-sm font-thin text-[#FFFDFA]">
+                            <p>Tom Geoghegan</p>
+                            <p>Front-End Developer</p>
+                            <a
+                                href="https://www.linkedin.com/in/thomas-geoghegan/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="transition-all ease-in-out hover:text-altSecond"
+                            >
+                                LinkedIn
+                            </a>
                         </div>
                     </div>
                     {/* Middle Wrapper - Menu links */}

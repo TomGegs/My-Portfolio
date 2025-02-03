@@ -5,12 +5,12 @@ function Footer() {
             <hr className="mx-auto  h-[1px] w-[90%] animate-gradient border-0 bg-gradient-to-r from-primary via-secondary to-[#cbb7f7]" />
             <div className="grid h-full w-full grid-cols-3 grid-rows-2 justify-between gap-x-4 px-10 text-[#FFFDFA] lg:my-4 lg:flex lg:flex-row lg:px-24">
                 {/* Copyright footer */}
-                <p className="col-span-2 pt-4 text-center text-xs text-gray-600">
-                    &copy; {new Date().getFullYear()} | Designed and coded by
+                <p className="col-span-2 pt-4 text-center text-xs ">
+                    &copy; {new Date().getFullYear()} | Designed and created by
                     Tom Geoghegan
                 </p>
                 {/* Contact details */}
-                <p className="pt-4 text-center text-xs text-gray-600">
+                <p className="pt-4 text-center text-xs ">
                     🌎Brisbane, Australia
                 </p>
                 <div
@@ -26,7 +26,7 @@ function Footer() {
                     role="button"
                     target="_blank"
                     tabIndex={0}
-                    className="cursor-pointer pt-4 text-center text-xs text-gray-600 transition-all ease-in-out hover:text-altSecond"
+                    className="cursor-pointer pt-4 text-center text-xs transition-all ease-in-out hover:text-altSecond"
                 >
                     Email
                 </div>
@@ -34,7 +34,7 @@ function Footer() {
                     href="https://github.com/TomGegs"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="pt-4 text-center text-xs text-gray-600 transition-all ease-in-out hover:text-altSecond"
+                    className="pt-4 text-center text-xs transition-all ease-in-out hover:text-altSecond"
                 >
                     GitHub
                 </a>
@@ -42,7 +42,7 @@ function Footer() {
                     href="https://www.linkedin.com/in/thomas-geoghegan/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="pt-4 text-center text-xs text-gray-600 transition-all ease-in-out hover:text-altSecond"
+                    className="pt-4 text-center text-xs transition-all ease-in-out hover:text-altSecond"
                 >
                     LinkedIn
                 </a>
