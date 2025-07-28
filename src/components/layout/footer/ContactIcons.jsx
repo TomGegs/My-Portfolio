@@ -1,12 +1,12 @@
 import images from '../../../data/images';
-import EmailIconButton from '../../buttons/EmailIconButton';
+// import EmailIconButton from '../../buttons/EmailIconButton';
 
 function ContactIcons() {
     const contactData = [
-        {
-            icon: <EmailIconButton pulse="flex" />,
-            text: 'tomgegs@outlook.com',
-        },
+        // {
+        //     icon: <EmailIconButton pulse="flex" />,
+        //     text: 'tomgegs@outlook.com',
+        // },
         {
             icon: 'linkedinIcon',
             text: '/in/thomas-geoghegan/',

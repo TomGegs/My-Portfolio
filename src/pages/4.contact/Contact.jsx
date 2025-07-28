@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import images from '../../data/images';
-import ContactForm from './ContactForm';
+import SocialButtons from '../../components/buttons/SocialLinks';
+// import ContactForm from './ContactForm';
 
 function Contact() {
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -55,15 +56,16 @@ function Contact() {
                                     ☕
                                 </span>
                             </h1>
-                            <p className="py-4 text-xl lg:w-[90%]">
+                            <p className="mb-4 py-4 text-xl lg:w-[90%]">
                                 {!isCoffee
-                                    ? "Get in touch and let's"
+                                    ? 'Connect with me to'
                                     : "I'll be in touch soon to"}{' '}
                                 find out how I can help you achieve your goals
                                 in software development, product management, and
                                 driving business growth.
                             </p>
-                            <ContactForm handleSubmit={handleSubmit} />
+                            {/* <ContactForm handleSubmit={handleSubmit} /> */}
+                            <SocialButtons />
                         </>
                     )}
                     {isSubmitted && (

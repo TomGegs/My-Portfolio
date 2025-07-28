@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 function Footer() {
     return (
         <footer>
@@ -13,7 +12,7 @@ function Footer() {
                 <p className="pt-4 text-center text-xs ">
                     🌎Brisbane, Australia
                 </p>
-                <div
+                {/* <div
                     onClick={() => {
                         const emailSubject =
                             'Meeting with Tom Geoghegan - React Developer';
@@ -29,7 +28,7 @@ function Footer() {
                     className="cursor-pointer pt-4 text-center text-xs transition-all ease-in-out hover:text-altSecond"
                 >
                     Email
-                </div>
+                </div> */}
                 <a
                     href="https://github.com/TomGegs"
                     target="_blank"

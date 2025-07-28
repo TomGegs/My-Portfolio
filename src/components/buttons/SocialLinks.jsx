@@ -1,7 +1,7 @@
 import images from '../../data/images';
-import EmailIconButton from './EmailIconButton';
+// import EmailIconButton from './EmailIconButton';
 
-function SocialButtons({ pulse }) {
+function SocialButtons() {
     return (
         // Container
         <div className="2xl-gap-16 relative mx-auto flex flex-row  gap-6 text-[#FFFDFA] lg:gap-8 xl:gap-10">
@@ -22,7 +22,7 @@ function SocialButtons({ pulse }) {
                 <images.gitHubIcon className="text-[30px] duration-150 ease-in-out hover:cursor-pointer hover:text-altSecond lg:text-[40px]" />
             </a>
             {/* Email icon - auto-generate and open email */}
-            <EmailIconButton pulse={pulse} />
+            {/* <EmailIconButton pulse={pulse} /> */}
         </div>
     );
 }
